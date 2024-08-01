@@ -2,7 +2,7 @@
 public class basic {
     
     // A static method
-    public static void printMessage(String message) {
+    public static void printMessage(String message) { //Use Void if there is no return statement.
         System.out.println(message);
     }
 
