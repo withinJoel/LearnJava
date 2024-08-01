@@ -213,3 +213,17 @@ public class ExceptionExample {
     }
 }
 ```
+## Basic I/O
+* Reading Input from the console
+```
+import java.util.Scanner;
+
+public class InputExample {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter your name: ");
+        String name = scanner.nextLine();
+        System.out.println("Hello, " + name + "!");
+    }
+}
+```
