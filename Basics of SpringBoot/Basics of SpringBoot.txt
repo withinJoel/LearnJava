@@ -3,3 +3,9 @@
     - Select `Spring Initializr`.
     - Click `Next`.
 * Configure the project settings
+   - Group: `com.example`
+   - Artifact: `demo`
+   - Name: `demo`
+   - Type: `Gradle Project`
+   - Language: `Java`
+   - Click `Next`.
