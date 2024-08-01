@@ -1,15 +1,15 @@
 * Create a new project in IntelliJ IDEA
-* In the `New Project` window.
-    - Select `Spring Initializr`.
-    - Click `Next`.
-* Configure the project settings
+# In the `New Project` window.
+    * Select `Spring Initializr`.
+    * Click `Next`.
+# Configure the project settings
    - Group: `com.example`
    - Artifact: `demo`
    - Name: `demo`
    - Type: `Gradle Project`
    - Language: `Java`
    - Click `Next`.
-* Select dependencies
-   - In the `Dependencies` section, add the following:
-     - `Spring Web`
+# Select dependencies
+   * In the `Dependencies` section, add the following:
+   - `Spring Web`
    - Click `Next`, then `Finish`.
