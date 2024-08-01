@@ -41,3 +41,17 @@ public class HelloWorld {
 * `double`: Floating-point number (e.g., double price = 19.99;)
 * `char`: Single character (e.g., char letter = 'A';)
 * `boolean`: True or false (e.g., boolean isJavaFun = true;)
+* Example:
+* ```public class VariablesExample {
+    public static void main(String[] args) {
+        int age = 25;
+        double salary = 50000.50;
+        char grade = 'A';
+        boolean isEmployed = true;
+
+        System.out.println("Age: " + age);
+        System.out.println("Salary: $" + salary);
+        System.out.println("Grade: " + grade);
+        System.out.println("Employed: " + isEmployed);
+    }
+}```
