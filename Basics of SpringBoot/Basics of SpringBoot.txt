@@ -13,3 +13,5 @@
    * In the `Dependencies` section, add the following:
    - `Spring Web`
    - Click `Next`, then `Finish`.
+
+# Configure Gradle Build Script
