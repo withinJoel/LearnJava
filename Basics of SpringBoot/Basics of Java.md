@@ -172,3 +172,19 @@ public class Main {
 }
 ```
 ## Inheritance
+* Basic Inheritance
+```
+// Parent class
+public class Animal {
+    void eat() {
+        System.out.println("This animal eats food.");
+    }
+}
+
+// Child class inheriting from Animal
+public class Dog extends Animal {
+    void bark() {
+        System.out.println("The dog barks.");
+    }
+}
+```
