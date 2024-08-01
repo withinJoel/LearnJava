@@ -79,3 +79,9 @@
     </html>`
 
 # Configure Spring Boot for JSP
+* Update the application.properties file**:
+- Open `src/main/resources/application.properties` and add the following lines to configure JSP view resolver:
+
+   `spring.mvc.view.prefix=/WEB-INF/
+    spring.mvc.view.suffix=.jsp`
+# Run the Application
