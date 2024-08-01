@@ -33,3 +33,11 @@ public class HelloWorld {
 
 * Compile: `javac HelloWorld.java`
 * Run: `java HelloWorld`
+
+## 4. Variables and Data Types
+* Java has eight primitive data types:
+
+* `int`: Integer (e.g., int num = 10;)
+* `double`: Floating-point number (e.g., double price = 19.99;)
+* `char`: Single character (e.g., char letter = 'A';)
+* `boolean`: True or false (e.g., boolean isJavaFun = true;)
