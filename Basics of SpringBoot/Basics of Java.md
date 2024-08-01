@@ -42,8 +42,8 @@ public class HelloWorld {
 * `double`: Floating-point number (e.g., double price = 19.99;)
 * `char`: Single character (e.g., char letter = 'A';)
 * `boolean`: True or false (e.g., boolean isJavaFun = true;)
-* Example:
-* ```
+
+```
 public class VariablesExample {
     public static void main(String[] args) {
         int age = 25;
