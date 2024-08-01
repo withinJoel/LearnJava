@@ -1,5 +1,5 @@
 // Basic Java Program
-public class BasicJavaExample {
+public class basic {
     
     // A static method
     public static void printMessage(String message) {
