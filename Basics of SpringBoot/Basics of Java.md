@@ -94,3 +94,10 @@ switch (day) {
         System.out.println("Invalid day");
 }
 ```
+## Loops
+## For Loop
+```
+for (int i = 0; i < 5; i++) {
+    System.out.println("i: " + i);
+}
+```
