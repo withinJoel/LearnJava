@@ -188,3 +188,13 @@ public class Dog extends Animal {
     }
 }
 ```
+* Using Inheritance
+```
+public class Main {
+    public static void main(String[] args) {
+        Dog dog = new Dog();
+        dog.eat(); // Inherited method
+        dog.bark(); // Child class method
+    }
+}
+```
