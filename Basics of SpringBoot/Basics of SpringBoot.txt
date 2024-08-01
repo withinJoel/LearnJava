@@ -77,3 +77,5 @@
         <h1>Welcome to the Spring Boot JSP Example!</h1>
     </body>
     </html>`
+
+# Configure Spring Boot for JSP
