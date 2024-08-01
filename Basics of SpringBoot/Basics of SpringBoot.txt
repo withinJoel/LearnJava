@@ -86,3 +86,5 @@
     spring.mvc.view.suffix=.jsp`
 # Run the Application
 - You can run your Spring Boot application by clicking the green `Run` button in IntelliJ or by running `./gradlew bootRun` from the terminal.
+# Access the application
+- Open your browser and navigate to `http://localhost:8080`. You should see the "Welcome to the Spring Boot JSP Example!" message.
