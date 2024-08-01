@@ -31,4 +31,5 @@ public class HelloWorld {
     }
 }```
 
-
+* Compile: `javac HelloWorld.java`
+* Run: `java HelloWorld`
