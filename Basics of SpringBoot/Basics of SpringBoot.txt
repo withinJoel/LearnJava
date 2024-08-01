@@ -44,6 +44,9 @@
 
 # Create Controller and View
 * Create a controller
+    - In `src/main/java/com/example/demo`, create a new package named `controller`.
+    - Inside the `controller` package, create a new Java class named `HomeController.java`:
+
 `package com.example.demo.controller;
 
     import org.springframework.stereotype.Controller;
