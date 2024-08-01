@@ -109,3 +109,11 @@ while (i < 5) {
     i++;
 }
 ```
+## Do-While Loop
+```
+int i = 0;
+do {
+    System.out.println("i: " + i);
+    i++;
+} while (i < 5);
+```
