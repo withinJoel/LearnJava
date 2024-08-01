@@ -64,3 +64,6 @@
     }`
 
 # Create a JSP View
+* Create a directory named `webapp` under `src/main` (i.e., `src/main/webapp`).
+* Inside `webapp`, create a subdirectory named `WEB-INF`.
+* Create a file named `index.jsp` in `src/main/webapp/WEB-INF`:
