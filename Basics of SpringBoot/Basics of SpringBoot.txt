@@ -67,3 +67,13 @@
 * Create a directory named `webapp` under `src/main` (i.e., `src/main/webapp`).
 * Inside `webapp`, create a subdirectory named `WEB-INF`.
 * Create a file named `index.jsp` in `src/main/webapp/WEB-INF`:
+`<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Home Page</title>
+    </head>
+    <body>
+        <h1>Welcome to the Spring Boot JSP Example!</h1>
+    </body>
+    </html>`
