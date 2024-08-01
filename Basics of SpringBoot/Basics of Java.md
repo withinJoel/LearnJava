@@ -43,7 +43,8 @@ public class HelloWorld {
 * `char`: Single character (e.g., char letter = 'A';)
 * `boolean`: True or false (e.g., boolean isJavaFun = true;)
 * Example:
-* ```public class VariablesExample {
+* ```
+public class VariablesExample {
     public static void main(String[] args) {
         int age = 25;
         double salary = 50000.50;
@@ -55,6 +56,7 @@ public class HelloWorld {
         System.out.println("Grade: " + grade);
         System.out.println("Employed: " + isEmployed);
     }
-}```
+}
+```
 
 ## 5. Control Flow Statements
