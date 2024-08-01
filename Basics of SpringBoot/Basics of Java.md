@@ -227,3 +227,12 @@ public class InputExample {
     }
 }
 ```
+* Writing Output to the Console
+```
+public class OutputExample {
+    public static void main(String[] args) {
+        System.out.println("This is a line of text.");
+        System.out.printf("Formatted output: %d + %d = %d%n", 10, 20, 10 + 20);
+    }
+}
+```
