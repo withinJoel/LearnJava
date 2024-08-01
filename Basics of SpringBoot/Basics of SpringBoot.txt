@@ -85,3 +85,4 @@
    `spring.mvc.view.prefix=/WEB-INF/
     spring.mvc.view.suffix=.jsp`
 # Run the Application
+- You can run your Spring Boot application by clicking the green `Run` button in IntelliJ or by running `./gradlew bootRun` from the terminal.
