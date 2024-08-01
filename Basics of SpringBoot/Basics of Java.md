@@ -24,12 +24,13 @@ Java is a high-level, class-based, object-oriented programming language designed
 
 Create a file named `HelloWorld.java`:
 
-```java
+```
 public class HelloWorld {
     public static void main(String[] args) {
         System.out.println("Hello, World!");
     }
-}```
+}
+```
 
 * Compile: `javac HelloWorld.java`
 * Run: `java HelloWorld`
