@@ -1,0 +1,5 @@
+* Create a new project in IntelliJ IDEA
+* In the `New Project` window.
+    - Select `Spring Initializr`.
+    - Click `Next`.
+* Configure the project settings
