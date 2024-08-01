@@ -9,3 +9,7 @@
    - Type: `Gradle Project`
    - Language: `Java`
    - Click `Next`.
+* Select dependencies
+   - In the `Dependencies` section, add the following:
+     - `Spring Web`
+   - Click `Next`, then `Finish`.
