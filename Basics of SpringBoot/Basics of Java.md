@@ -60,3 +60,11 @@ public class VariablesExample {
 ```
 
 ## 5. Control Flow Statements
+# Conditional Statements
+* If Statement
+```
+int number = 10;
+if (number > 0) {
+    System.out.println("Number is positive.");
+}
+```
