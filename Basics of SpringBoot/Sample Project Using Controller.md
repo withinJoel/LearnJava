@@ -13,6 +13,7 @@ src
        - static
           * home.html
           * login.html
+          * register.html
           * error.html
   - build.gradle
 ```
