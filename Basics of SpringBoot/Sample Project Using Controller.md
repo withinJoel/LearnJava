@@ -198,3 +198,69 @@ test {
 </body>
 </html>
 ```
+## error.html
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #333;
+            text-align: center;
+        }
+
+        .error-container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            padding: 20px;
+        }
+
+        .error-container h1 {
+            margin: 0;
+            color: #e74c3c;
+            font-size: 48px;
+        }
+
+        .error-container p {
+            margin: 10px 0;
+            font-size: 18px;
+            color: #555;
+        }
+
+        .error-container a {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #3498db;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .error-container a:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+<div class="error-container">
+    <h1>Oops!</h1>
+    <p>The site is down or an unexpected error occurred.</p>
+    <a href="/">Go to Homepage</a>
+</div>
+</body>
+</html>
+```
