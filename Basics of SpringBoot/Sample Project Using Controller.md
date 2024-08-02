@@ -206,6 +206,114 @@ test {
 </body>
 </html>
 ```
+## register.html
+```
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background-color: #ffffff;
+            border-radius: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .login-container label {
+            display: block;
+            margin-bottom: 5px;
+            text-align: left;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"],
+        .login-container input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 30px;
+            box-sizing: border-box;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4285F4;
+            border: none;
+            border-radius: 30px;
+            color: #ffffff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-container button:hover {
+            background-color: #357ae8;
+        }
+
+        .login-container .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #777;
+        }
+
+        .login-container .footer a {
+            color: #4285F4;
+            text-decoration: none;
+        }
+
+        .login-container .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div class="login-container">
+    <h2>Register</h2>
+    <form action="/home" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required="required" placeholder="Enter your username"/>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required="required" placeholder="Enter your email-id"/>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required="required" placeholder="Enter your password"/>
+        <button type="submit">Create</button>
+        <div class="footer">
+            <p>Already have an account? <a href="/login">Login</a></p>
+        </div>
+    </form>
+</div>
+</body>
+</html>
+</title>
+</head>
+<body>
+</body>
+</html>
+```
 ## error.html
 ```
 <!DOCTYPE html>
