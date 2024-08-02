@@ -336,7 +336,7 @@ test {
 </body>
 </html>
 ```
-## About.html
+## about.html
 ```
 <!DOCTYPE html>
 <html lang="en">
