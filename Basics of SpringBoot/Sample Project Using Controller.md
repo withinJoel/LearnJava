@@ -49,18 +49,6 @@ public class AppController {
         return "login.html";  // Resolves to src/main/resources/static/login.html
     }
 
-    @PostMapping("/login")
-    public RedirectView handleLogin(@RequestParam String username, @RequestParam String password) {
-        String validUsername = "joel";
-        String validPassword = "joel";
-
-        if (validUsername.equals(username) && validPassword.equals(password)) {
-            return new RedirectView("/home.html");
-        } else {
-            return new RedirectView("/error.html");
-        }
-    }
-
     @GetMapping("/home")
     public String home() {
         return "home.html";  // Resolves to src/main/resources/static/home.html
@@ -69,6 +57,25 @@ public class AppController {
     @GetMapping("/error")
     public String error() {
         return "error.html";  // Resolves to src/main/resources/static/error.html
+    }
+
+    @GetMapping ("/about")
+    public String about() {
+        return "about.html";
+    }
+
+    @PostMapping("/login")
+    public RedirectView handleLogin(@RequestParam String username, @RequestParam String password) {
+        String validUsername = "joel";
+        String validPassword = "joel";
+
+        if (validUsername.equals(username) && validPassword.equals(password)) {
+            System.out.println("Logging in");
+            return new RedirectView("/home.html");
+        } else {
+            System.out.println("Error logging in");
+            return new RedirectView("/error.html");
+        }
     }
 }
 ```
