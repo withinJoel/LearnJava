@@ -14,3 +14,4 @@ src
           * home.html
           * login.html
           * error.html
+```
