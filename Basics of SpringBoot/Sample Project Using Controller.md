@@ -13,3 +13,4 @@ src
        - static
           * home.html
           * login.html
+          * error.html
