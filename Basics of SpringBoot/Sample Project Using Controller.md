@@ -12,6 +12,7 @@ src
     - resources
        - static
           * home.html
+          * about.html
           * login.html
           * register.html
           * invaliduser.html
