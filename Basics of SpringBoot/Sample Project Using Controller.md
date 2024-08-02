@@ -31,7 +31,7 @@ public class LoginApplication {
     }
 }
 ```
-## AppControler.java
+## AppController.java
 ```
 package com.example.login;
 
