@@ -31,3 +31,44 @@ public class LoginApplication {
     }
 }
 ```
+## AppControler.java
+```
+package com.example.login;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.view.RedirectView;
+
+@Controller
+public class AppController {
+
+    @GetMapping("/login")
+    public String login() {
+        return "login.html";  // Resolves to src/main/resources/static/login.html
+    }
+
+    @PostMapping("/login")
+    public RedirectView handleLogin(@RequestParam String username, @RequestParam String password) {
+        String validUsername = "joel";
+        String validPassword = "joel";
+
+        if (validUsername.equals(username) && validPassword.equals(password)) {
+            return new RedirectView("/home.html");
+        } else {
+            return new RedirectView("/error.html");
+        }
+    }
+
+    @GetMapping("/home")
+    public String home() {
+        return "home.html";  // Resolves to src/main/resources/static/home.html
+    }
+
+    @GetMapping("/error")
+    public String error() {
+        return "error.html";  // Resolves to src/main/resources/static/error.html
+    }
+}
+```
