@@ -14,6 +14,7 @@ src
           * home.html
           * login.html
           * register.html
+          * invaliduser.html
           * error.html
   - build.gradle
 ```
@@ -55,6 +56,11 @@ public class AppController {
         return "home.html";  // Resolves to src/main/resources/static/home.html
     }
 
+    @GetMapping("/invaliduser")
+    public String invaliduser() {
+        return "invaliduser.html";  // Resolves to src/main/resources/static/login.html
+    }
+
     @GetMapping("/error")
     public String error() {
         return "error.html";  // Resolves to src/main/resources/static/error.html
@@ -63,6 +69,11 @@ public class AppController {
     @GetMapping ("/about")
     public String about() {
         return "about.html";
+    }
+
+    @GetMapping ("/register")
+    public String register() {
+        return "register.html";
     }
 
     @PostMapping("/login")
@@ -75,7 +86,7 @@ public class AppController {
             return new RedirectView("/home.html");
         } else {
             System.out.println("Error logging in");
-            return new RedirectView("/error.html");
+            return new RedirectView("/invaliduser.html");
         }
     }
 }
@@ -509,6 +520,64 @@ test {
 </div>
 </body>
 </html>
+```
+## invaliduser.html
+```
+package com.example.login;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.view.RedirectView;
+
+@Controller
+public class AppController {
+
+    @GetMapping("/login")
+    public String login() {
+        return "login.html";  // Resolves to src/main/resources/static/login.html
+    }
+
+    @GetMapping("/home")
+    public String home() {
+        return "home.html";  // Resolves to src/main/resources/static/home.html
+    }
+
+    @GetMapping("/invaliduser")
+    public String invaliduser() {
+        return "invaliduser.html";  // Resolves to src/main/resources/static/login.html
+    }
+
+    @GetMapping("/error")
+    public String error() {
+        return "error.html";  // Resolves to src/main/resources/static/error.html
+    }
+
+    @GetMapping ("/about")
+    public String about() {
+        return "about.html";
+    }
+
+    @GetMapping ("/register")
+    public String register() {
+        return "register.html";
+    }
+
+    @PostMapping("/login")
+    public RedirectView handleLogin(@RequestParam String username, @RequestParam String password) {
+        String validUsername = "joel";
+        String validPassword = "joel";
+
+        if (validUsername.equals(username) && validPassword.equals(password)) {
+            System.out.println("Logging in");
+            return new RedirectView("/home.html");
+        } else {
+            System.out.println("Error logging in");
+            return new RedirectView("/invaliduser.html");
+        }
+    }
+}
 ```
 ## Execute
 * Open browser
