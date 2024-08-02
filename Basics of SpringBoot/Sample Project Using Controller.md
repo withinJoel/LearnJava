@@ -14,4 +14,5 @@ src
           * home.html
           * login.html
           * error.html
+  - build.gradle
 ```
