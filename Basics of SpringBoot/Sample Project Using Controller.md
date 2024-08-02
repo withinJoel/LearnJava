@@ -329,3 +329,6 @@ test {
 </body>
 </html>
 ```
+## Execute
+* Open browser
+* got to `http://localhost:8080/`
