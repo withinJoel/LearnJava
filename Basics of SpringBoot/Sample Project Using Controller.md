@@ -73,32 +73,32 @@ public class AppController {
 
     @GetMapping("/login")
     public String login() {
-        return "login.html";  // Resolves to src/main/resources/static/login.html
+        return "login.html";  // Refers to src/main/resources/static/login.html
     }
 
     @GetMapping("/home")
     public String home() {
-        return "home.html";  // Resolves to src/main/resources/static/home.html
+        return "home.html";  // Refers to src/main/resources/static/home.html
     }
 
     @GetMapping("/invaliduser")
     public String invaliduser() {
-        return "invaliduser.html";  // Resolves to src/main/resources/static/login.html
+        return "invaliduser.html";  // Refers to src/main/resources/static/invaliduser.html
     }
 
     @GetMapping("/error")
     public String error() {
-        return "error.html";  // Resolves to src/main/resources/static/error.html
+        return "error.html";  // Refers to src/main/resources/static/error.html
     }
 
-    @GetMapping ("/about")
+    @GetMapping("/about")
     public String about() {
-        return "about.html";
+        return "about.html";  // Refers to src/main/resources/static/about.html
     }
 
-    @GetMapping ("/register")
+    @GetMapping("/register")
     public String register() {
-        return "register.html";
+        return "register.html";  // Refers to src/main/resources/static/register.html
     }
 
     @PostMapping("/login")
@@ -106,12 +106,13 @@ public class AppController {
         String validUsername = "joel";
         String validPassword = "joel";
 
+        // Capitalize the first letter and make the rest lowercase
+        String capitalizedUsername = username.substring(0, 1).toUpperCase() + username.substring(1).toLowerCase();
+
         if (validUsername.equals(username) && validPassword.equals(password)) {
-            System.out.println("Logging in");
-            return new RedirectView("/home.html");
+            return new RedirectView("/home.html?username=" + capitalizedUsername);
         } else {
-            System.out.println("Error logging in");
-            return new RedirectView("/invaliduser.html");
+            return new RedirectView("/invaliduser.html?username=" + capitalizedUsername);
         }
     }
 }
@@ -137,7 +138,7 @@ public class AppController {
 
         .login-container {
             background-color: #ffffff;
-            border-radius: 8px;
+            border-radius: 30px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             width: 350px;
             padding: 20px;
@@ -163,7 +164,7 @@ public class AppController {
             padding: 10px;
             margin-bottom: 20px;
             border: 1px solid #ccc;
-            border-radius: 4px;
+            border-radius: 30px;
             box-sizing: border-box;
         }
 
@@ -172,7 +173,7 @@ public class AppController {
             padding: 10px;
             background-color: #4285F4;
             border: none;
-            border-radius: 4px;
+            border-radius: 30px;
             color: #ffffff;
             font-size: 16px;
             cursor: pointer;
@@ -347,7 +348,7 @@ public class AppController {
 
         .error-container {
             background-color: #ffffff;
-            border-radius: 8px;
+            border-radius: 30px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             width: 400px;
             padding: 20px;
@@ -371,7 +372,7 @@ public class AppController {
             font-size: 16px;
             color: #ffffff;
             background-color: #3498db;
-            border-radius: 4px;
+            border-radius: 30px;
             text-decoration: none;
             transition: background-color 0.3s ease;
         }
@@ -385,7 +386,7 @@ public class AppController {
 <div class="error-container">
     <h1>Oops!</h1>
     <p>The site is down or an unexpected error occurred.</p>
-    <a href="/">Go to Homepage</a>
+    <a href="/login">Go to Homepage</a>
 </div>
 </body>
 </html>
@@ -412,7 +413,7 @@ public class AppController {
 
         .home-container {
             background-color: #ffffff;
-            border-radius: 8px;
+            border-radius: 30px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             width: 400px;
             padding: 20px;
@@ -436,7 +437,7 @@ public class AppController {
             font-size: 16px;
             color: #ffffff;
             background-color: #4285F4;
-            border-radius: 4px;
+            border-radius: 30px;
             text-decoration: none;
             transition: background-color 0.3s ease;
         }
@@ -448,11 +449,27 @@ public class AppController {
 </head>
 <body>
 <div class="home-container">
-    <h2>Welcome</h2>
+    <h2>Welcome <span id="username-placeholder"></span></h2>
     <p>You have successfully logged in.</p>
+    <a href="/about">About</a>
     <a href="/login">Logout</a>
 </div>
 </body>
+<script>
+    // Function to get URL parameters
+    function getQueryParam(param) {
+        var urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+    }
+
+    // Set the username placeholder with the URL parameter
+    document.addEventListener('DOMContentLoaded', function() {
+        var username = getQueryParam('username');
+        if (username) {
+            document.getElementById('username-placeholder').textContent = username;
+        }
+    });
+</script>
 </html>
 ```
 ## about.html
@@ -477,7 +494,7 @@ public class AppController {
 
         .home-container {
             background-color: #ffffff;
-            border-radius: 8px;
+            border-radius: 30px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             width: 400px;
             padding: 20px;
@@ -501,7 +518,7 @@ public class AppController {
             font-size: 16px;
             color: #ffffff;
             background-color: #4285F4;
-            border-radius: 4px;
+            border-radius: 30px;
             text-decoration: none;
             transition: background-color 0.3s ease;
         }
@@ -515,6 +532,9 @@ public class AppController {
 <div class="home-container">
     <h2>Version 1.0.0</h2>
     <p>Developed by Joel Jolly.</p>
+    <a href="https://www.instagram.com/withinjoel">Instagram</a>
+    <a href="https://www.github.com/withinjoel">GitHub</a>
+    <br> <br>
     <a href="/home">Back to home</a>
 </div>
 </body>
@@ -522,61 +542,85 @@ public class AppController {
 ```
 ## invaliduser.html
 ```
-package com.example.login;
-
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.servlet.view.RedirectView;
-
-@Controller
-public class AppController {
-
-    @GetMapping("/login")
-    public String login() {
-        return "login.html";  // Resolves to src/main/resources/static/login.html
-    }
-
-    @GetMapping("/home")
-    public String home() {
-        return "home.html";  // Resolves to src/main/resources/static/home.html
-    }
-
-    @GetMapping("/invaliduser")
-    public String invaliduser() {
-        return "invaliduser.html";  // Resolves to src/main/resources/static/login.html
-    }
-
-    @GetMapping("/error")
-    public String error() {
-        return "error.html";  // Resolves to src/main/resources/static/error.html
-    }
-
-    @GetMapping ("/about")
-    public String about() {
-        return "about.html";
-    }
-
-    @GetMapping ("/register")
-    public String register() {
-        return "register.html";
-    }
-
-    @PostMapping("/login")
-    public RedirectView handleLogin(@RequestParam String username, @RequestParam String password) {
-        String validUsername = "joel";
-        String validPassword = "joel";
-
-        if (validUsername.equals(username) && validPassword.equals(password)) {
-            System.out.println("Logging in");
-            return new RedirectView("/home.html");
-        } else {
-            System.out.println("Error logging in");
-            return new RedirectView("/invaliduser.html");
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #333;
+            text-align: center;
         }
+
+        .error-container {
+            background-color: #ffffff;
+            border-radius: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            padding: 20px;
+        }
+
+        .error-container h1 {
+            margin: 0;
+            color: #e74c3c;
+            font-size: 48px;
+        }
+
+        .error-container p {
+            margin: 10px 0;
+            font-size: 18px;
+            color: #555;
+        }
+
+        .error-container a {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #3498db;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .error-container a:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+<div class="error-container">
+    <h1>Oops!</h1>
+    <p>There is no user like <span id="username-placeholder"></span> in our database!</p>
+    <a href="/login">Try again</a>
+</div>
+
+<script>
+    // Function to get URL parameters
+    function getQueryParam(param) {
+        var urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
     }
-}
+
+    // Set the username placeholder with the URL parameter
+    document.addEventListener('DOMContentLoaded', function() {
+        var username = getQueryParam('username');
+        if (username) {
+            document.getElementById('username-placeholder').textContent = username;
+        }
+    });
+</script>
+</body>
+</html>
 ```
 ## Execute
 * Open browser
