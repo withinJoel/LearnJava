@@ -16,7 +16,7 @@ src
           * register.html
           * invaliduser.html
           * error.html
-- build.gradle
+ - build.gradle
 ```
 
 ## LoginApplication.java
