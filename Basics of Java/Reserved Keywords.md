@@ -3,7 +3,7 @@
 abstract  continue  goto        package    synchronized
 assert    default   if          private    this
 boolean   do        implements  protected  throw
-break     double    import      public
+break     double    import      public     throws
 byte      else      instanceof  return
 case      extends   int         short
 catch     final     interface   static
