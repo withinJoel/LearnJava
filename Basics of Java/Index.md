@@ -1,4 +1,4 @@
 `Intro` - For Introduction to Java
 `Basics of Java` - Covers all the must knows of Java.
 `Naming Scheme` - Covers on what needs to start with an uppercase and what to start with a lowercase.
-`java.util.Scanner` - To get an input from the user.
+`/java.util.Scanner` - To get an input from the user.
