@@ -1,8 +1,8 @@
 ## Reserved Keywords
 
-abstract  continue  goto        package
-assert    default   if          private
-boolean   do        implements  protected
+abstract  continue  goto        package    synchronized
+assert    default   if          private    this
+boolean   do        implements  protected  throw
 break     double    import      public
 byte      else      instanceof  return
 case      extends   int         short
