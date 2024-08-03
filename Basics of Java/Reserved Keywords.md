@@ -3,8 +3,8 @@
 abstract  continue
 assert    default
 boolean   do
-break     
-byte
+break     double
+byte      else
 case
 catch
 char
