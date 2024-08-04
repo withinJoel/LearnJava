@@ -95,7 +95,7 @@ public class MyService {
 ### `@Scope`
 - **Use:** Configures the scope of a bean.
 - **Placement:** On classes or methods annotated with `@Bean`.
-```java
+```
 @Service
 @Scope("prototype")
 public class MyPrototypeService {
