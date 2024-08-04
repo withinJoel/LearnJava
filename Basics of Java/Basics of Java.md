@@ -40,7 +40,10 @@ public class HelloWorld {
 
 * `int`: Integer (e.g., int num = 10;)
 * `long`: Long (e.g., long days = 1000;)
+* `short`: Short (e.g., short num = 20;)
 * `double`: Floating-point number (e.g., double price = 19.99;)
+* `float`: Float (eg., float years = 11.0;)
+* `string`: String (eg., String name = "Joel";)
 * `char`: Single character (e.g., char letter = 'A';)
 * `boolean`: True or false (e.g., boolean isJavaFun = true;)
 
