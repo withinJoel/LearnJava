@@ -38,7 +38,7 @@ public class MyApp {
 ### `@EnableAutoConfiguration`
 - **Use:** Enables Spring Boot’s auto-configuration mechanism.
 - **Placement:** Main application class.
-```java
+```
 @SpringBootApplication
 @EnableAutoConfiguration
 public class MyApp {
@@ -48,7 +48,7 @@ public class MyApp {
 ### `@RestController`
 - **Use:** Combines `@Controller` and `@ResponseBody`. It indicates that the class is a controller where every method returns a domain object instead of a view.
 - **Placement:** Controller classes.
-```java
+```
 @RestController
 public class MyController {
     @GetMapping("/hello")
