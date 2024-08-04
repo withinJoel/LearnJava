@@ -85,6 +85,14 @@ System.out.println("April has " +month_days[3] + " days.");
 * `++` - Increment
 * `--` - Decrement
 
+### Relational Operators
+* `==` - Equal to
+* `!=` - Not equal to
+* `>` - Greater than
+* `<` - Less than
+* `>=` - Greater than or equal to
+* `<=` - Less than or equal to
+
 ## 5. Control Flow Statements
 ## Conditional Statements
 * If Statement
