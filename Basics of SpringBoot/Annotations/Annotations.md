@@ -3,6 +3,76 @@
 
 ## Key Spring Boot Annotations
 
+## Gradle Project Directory Structure
+
+Here is a typical directory structure for a Spring Boot project using Gradle:
+
+```
+MySpringBootApp/
+ ├── build.gradle
+ ├── settings.gradle
+ ├── src/
+ │    ├── main/
+ │    │    ├── java/
+ │    │    │    └── com/
+ │    │    │        └── example/
+ │    │    │            ├── MyApp.java        # Main application class
+ │    │    │            ├── config/
+ │    │    │            │    └── AppConfig.java  # Configuration classes
+ │    │    │            ├── controller/
+ │    │    │            │    └── MyController.java  # Controller classes
+ │    │    │            ├── service/
+ │    │    │            │    └── MyService.java  # Service classes
+ │    │    │            ├── repository/
+ │    │    │            │    └── MyRepository.java  # Repository classes
+ │    │    │            └── model/
+ │    │    │                └── MyEntity.java  # Model classes
+ │    │    └── resources/
+ │    │        ├── application.properties  # Configuration properties
+ │    │        └── static/  # Static resources (e.g., HTML, CSS)
+ │    │        └── templates/  # Template files (e.g., Thymeleaf)
+ │    └── test/
+ │        └── java/
+ │            └── com/
+ │                └── example/
+ │                    └── MyAppTests.java  # Test classes
+ └── gradle/
+      └── wrapper/
+          ├── gradle-wrapper.jar
+          └── gradle-wrapper.properties
+```
+
+## `build.gradle` Example
+
+Here is an example of a `build.gradle` file for a Spring Boot project:
+
+```
+plugins {
+    id 'org.springframework.boot' version '2.7.4'
+    id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+    id 'java'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '17'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    runtimeOnly 'mysql:mysql-connector-java'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+test {
+    useJUnitPlatform()
+}
+```
+
 ### `@SpringBootApplication`
 - **Use:** This is a combination of three annotations: `@EnableAutoConfiguration`, `@ComponentScan`, and `@Configuration`.
 - **Placement:** Main application class.
