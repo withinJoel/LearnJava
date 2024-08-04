@@ -53,7 +53,9 @@ public class HelloWorld {
 * `boolean`: True or false (e.g., boolean isJavaFun = true;)
 
 ### Arrays
-
+* One-Dimentional Arrays
+* structure: type variable-name[];
+ 
 ```
 public class VariablesExample {
     public static void main(String[] args) {
