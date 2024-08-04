@@ -76,6 +76,14 @@ public class VariablesExample {
 int month_days[] = { 31, 28, 31, 30, 31, 30, 31, 30, 31, 30, 31, 30};
 System.out.println("April has " +month_days[3] + " days.");
 ```
+### Arithmetic Operators
+* `+` - Addition
+* `-` - Subtraction
+* `*` - Multiplication
+* `/` - Division
+* `%` - Modulus
+* `++` - Increment
+* `--` - Decrement
 
 ## 5. Control Flow Statements
 ## Conditional Statements
