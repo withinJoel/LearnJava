@@ -84,7 +84,7 @@ public class MyService {
 ### `@Repository`
 - **Use:** Indicates that the class provides the mechanism for storage, retrieval, search, update, and delete operation on objects.
 - **Placement:** Repository classes.
-```java
+```
 @Repository
 public class MyRepository {
     // Database access logic
@@ -94,7 +94,7 @@ public class MyRepository {
 ### `@Entity`
 - **Use:** Specifies that the class is an entity and is mapped to a database table.
 - **Placement:** Model classes.
-```java
+```
 @Entity
 public class MyEntity {
     @Id
