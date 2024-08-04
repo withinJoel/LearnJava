@@ -1,8 +1,6 @@
 
 # Spring Boot Annotations and Gradle Project Structure
 
-## Key Spring Boot Annotations
-
 ## Gradle Project Directory Structure
 
 Here is a typical directory structure for a Spring Boot project using Gradle:
