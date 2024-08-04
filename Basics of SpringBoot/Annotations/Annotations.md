@@ -61,7 +61,7 @@ public class MyController {
 ### `@RequestMapping`
 - **Use:** Maps HTTP requests to handler methods of MVC and REST controllers.
 - **Placement:** Controller methods.
-```java
+```
 @RestController
 public class MyController {
     @RequestMapping(value = "/greet", method = RequestMethod.GET)
@@ -74,7 +74,7 @@ public class MyController {
 ### `@Service`
 - **Use:** Indicates that a class is a service. It’s used to mark the business logic classes.
 - **Placement:** Service classes.
-```java
+```
 @Service
 public class MyService {
     // Business logic
