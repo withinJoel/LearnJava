@@ -38,14 +38,21 @@ public class HelloWorld {
 ## 4. Variables and Data Types
 * Java has eight primitive data types:
 
+### Math
 * `int`: Integer (e.g., int num = 10;)
 * `long`: Long (e.g., long days = 1000;)
 * `short`: Short (e.g., short num = 20;)
 * `double`: Floating-point number (e.g., double price = 19.99;)
 * `float`: Float (eg., float years = 11.0;)
+
+### Text
 * `string`: String (eg., String name = "Joel";)
 * `char`: Single character (e.g., char letter = 'A';)
+
+### Boolean
 * `boolean`: True or false (e.g., boolean isJavaFun = true;)
+
+### Arrays
 
 ```
 public class VariablesExample {
