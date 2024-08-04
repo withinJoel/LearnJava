@@ -39,6 +39,7 @@ public class HelloWorld {
 * Java has eight primitive data types:
 
 * `int`: Integer (e.g., int num = 10;)
+* `long`: Long (e.g., long days = 1000;)
 * `double`: Floating-point number (e.g., double price = 19.99;)
 * `char`: Single character (e.g., char letter = 'A';)
 * `boolean`: True or false (e.g., boolean isJavaFun = true;)
