@@ -83,7 +83,7 @@ public class MyService {
 ### `@Qualifier`
 - **Use:** When you need more control over the selection process of beans to be injected.
 - **Placement:** Fields, constructors, or methods where `@Autowired` is used.
-```java
+```
 @Service
 public class MyService {
     @Autowired
