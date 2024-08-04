@@ -46,7 +46,7 @@ public class MyRepository {
 ### `@Controller`
 - **Use:** Indicates that an annotated class is a "Controller" (e.g., a web controller).
 - **Placement:** Controller classes.
-```java
+```
 @Controller
 public class MyController {
     @GetMapping("/home")
