@@ -54,8 +54,7 @@ public class HelloWorld {
 
 ### Arrays
 * One-Dimentional Arrays
-* structure: type variable-name[];
- 
+* structure: type variable-name[]; example: `int month[];`
 ```
 public class VariablesExample {
     public static void main(String[] args) {
