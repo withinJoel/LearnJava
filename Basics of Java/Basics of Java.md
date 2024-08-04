@@ -44,6 +44,22 @@ public class HelloWorld {
 * `short`: Short (e.g., short num = 20;)
 * `double`: Floating-point number (e.g., double price = 19.99;)
 * `float`: Float (eg., float years = 11.0;)
+* example program:
+```
+public class VariablesExample {
+    public static void main(String[] args) {
+        int age = 25;
+        double salary = 50000.50;
+        char grade = 'A';
+        boolean isEmployed = true;
+
+        System.out.println("Age: " + age);
+        System.out.println("Salary: $" + salary);
+        System.out.println("Grade: " + grade);
+        System.out.println("Employed: " + isEmployed);
+    }
+}
+```
 
 ### Text
 * `string`: String (eg., String name = "Joel";)
@@ -59,21 +75,6 @@ public class HelloWorld {
 ```
 int month_days[] = { 31, 28, 31, 30, 31, 30, 31, 30, 31, 30, 31, 30};
 System.out.println("April has " +month_days[3] + " days.");
-```
-
-public class VariablesExample {
-    public static void main(String[] args) {
-        int age = 25;
-        double salary = 50000.50;
-        char grade = 'A';
-        boolean isEmployed = true;
-
-        System.out.println("Age: " + age);
-        System.out.println("Salary: $" + salary);
-        System.out.println("Grade: " + grade);
-        System.out.println("Employed: " + isEmployed);
-    }
-}
 ```
 
 ## 5. Control Flow Statements
