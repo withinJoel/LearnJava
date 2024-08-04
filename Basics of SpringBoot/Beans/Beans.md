@@ -3,7 +3,7 @@
 ### `@Bean`
 - **Use:** Indicates that a method produces a bean to be managed by the Spring container.
 - **Placement:** Methods within configuration classes.
-```java
+```
 @Configuration
 public class AppConfig {
     @Bean
