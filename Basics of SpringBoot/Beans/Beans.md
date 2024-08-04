@@ -59,7 +59,7 @@ public class MyController {
 ### `@RestController`
 - **Use:** A convenience annotation that is itself annotated with `@Controller` and `@ResponseBody`.
 - **Placement:** RESTful web service controller classes.
-```java
+```
 @RestController
 public class MyRestController {
     @GetMapping("/api/home")
@@ -72,7 +72,7 @@ public class MyRestController {
 ### `@Autowired`
 - **Use:** Marks a constructor, field, setter method, or config method as to be autowired by Spring's dependency injection facilities.
 - **Placement:** Fields, constructors, or methods.
-```java
+```
 @Service
 public class MyService {
     @Autowired
