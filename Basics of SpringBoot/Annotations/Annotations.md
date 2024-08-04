@@ -71,6 +71,8 @@ test {
 }
 ```
 
+## Key Spring Boot Annotations
+
 ### `@SpringBootApplication`
 - **Use:** This is a combination of three annotations: `@EnableAutoConfiguration`, `@ComponentScan`, and `@Configuration`.
 - **Placement:** Main application class.
