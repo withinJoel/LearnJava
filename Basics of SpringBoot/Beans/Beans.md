@@ -16,7 +16,7 @@ public class AppConfig {
 ### `@Component`
 - **Use:** Indicates that an annotated class is a "component". Such classes are considered as candidates for auto-detection when using annotation-based configuration and classpath scanning.
 - **Placement:** Any Spring-managed class (e.g., service classes, DAOs).
-```java
+```
 @Component
 public class MyComponent {
     // Component logic
