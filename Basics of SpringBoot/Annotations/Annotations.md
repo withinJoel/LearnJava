@@ -6,7 +6,7 @@
 ### `@SpringBootApplication`
 - **Use:** This is a combination of three annotations: `@EnableAutoConfiguration`, `@ComponentScan`, and `@Configuration`.
 - **Placement:** Main application class.
-```java
+```
 @SpringBootApplication
 public class MyApp {
     public static void main(String[] args) {
@@ -18,7 +18,7 @@ public class MyApp {
 ### `@Configuration`
 - **Use:** Indicates that the class can be used by the Spring IoC container as a source of bean definitions.
 - **Placement:** Configuration classes.
-```java
+```
 @Configuration
 public class AppConfig {
     // Bean definitions
@@ -28,7 +28,7 @@ public class AppConfig {
 ### `@ComponentScan`
 - **Use:** Configures component scanning directives for use with `@Configuration` classes.
 - **Placement:** Typically used in the main application class or configuration classes.
-```java
+```
 @SpringBootApplication
 @ComponentScan(basePackages = "com.example")
 public class MyApp {
