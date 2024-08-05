@@ -166,7 +166,7 @@ public class RegistrationService {
         .login-container {
             background-color: #ffffff;
             padding: 30px;
-            border-radius: 8px;
+            border-radius: 20px;
             box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
             width: 300px;
             text-align: center;
@@ -190,7 +190,7 @@ public class RegistrationService {
             padding: 10px;
             margin-bottom: 20px;
             border: 1px solid #ccc;
-            border-radius: 4px;
+            border-radius: 20px;
             box-sizing: border-box;
             font-size: 16px;
         }
@@ -198,7 +198,7 @@ public class RegistrationService {
             width: 100%;
             padding: 12px;
             border: none;
-            border-radius: 4px;
+            border-radius: 20px;
             background-color: #1a73e8;
             color: white;
             font-size: 16px;
@@ -245,7 +245,7 @@ public class RegistrationService {
         .login-container {
             background-color: #ffffff;
             padding: 30px;
-            border-radius: 8px;
+            border-radius: 20px;
             box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
             width: 300px;
             text-align: center;
@@ -269,7 +269,7 @@ public class RegistrationService {
             padding: 10px;
             margin-bottom: 20px;
             border: 1px solid #ccc;
-            border-radius: 4px;
+            border-radius: 20px;
             box-sizing: border-box;
             font-size: 16px;
         }
@@ -277,7 +277,7 @@ public class RegistrationService {
             width: 100%;
             padding: 12px;
             border: none;
-            border-radius: 4px;
+            border-radius: 20px;
             background-color: #1a73e8;
             color: white;
             font-size: 16px;
@@ -325,7 +325,7 @@ public class RegistrationService {
         .error-container {
             background-color: #ffffff;
             padding: 30px;
-            border-radius: 8px;
+            border-radius: 20px;
             box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
             width: 400px;
             text-align: center;
@@ -405,7 +405,7 @@ public class RegistrationService {
             background-color: #ffffff;
             border: 2px solid #1a73e8;
             padding: 10px 20px;
-            border-radius: 5px;
+            border-radius: 20px;
             margin: 10px;
             transition: background-color 0.3s, color 0.3s;
         }
@@ -446,7 +446,7 @@ public class RegistrationService {
         .about-container {
             background-color: #ffffff;
             padding: 30px;
-            border-radius: 8px;
+            border-radius: 20px;
             box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
             width: 400px;
             text-align: center;
@@ -492,7 +492,7 @@ public class RegistrationService {
         .feed-container {
             background-color: #ffffff;
             padding: 30px;
-            border-radius: 8px;
+            border-radius: 20px;
             box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
             width: 600px;
             text-align: left;
