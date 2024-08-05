@@ -17,6 +17,7 @@ src
           * home.html
           * about.html
           * login.html
+          * register.html
           * feed.html
           * error.html
  - build.gradle
@@ -178,6 +179,86 @@ public class MyController {
         <input type="text" id="username" name="username" placeholder="Enter your username">
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" placeholder="Enter your password">
+        <button type="submit">Sign In</button>
+    </form>
+</div>
+</body>
+</html>
+```
+## register.html
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+            width: 300px;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+            color: #1a73e8;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        label {
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #5f6368;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        button[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            background-color: #1a73e8;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button[type="submit"]:hover {
+            background-color: #0f5aa0;
+        }
+    </style>
+</head>
+<body>
+<div class="login-container">
+    <h1>Starship</h1>
+    <form action="/loginauth" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your emailid" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
         <button type="submit">Sign In</button>
     </form>
 </div>
