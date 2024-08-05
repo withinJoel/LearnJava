@@ -219,7 +219,7 @@ public class RegistrationService {
         <input type="password" id="password" name="password" placeholder="Enter your password">
         <button type="submit">Sign In</button>
     </form>
-    <a href="/register.html">Signup</a>
+    <a href="/register.html" style="display: inline-block; margin-top: 20px;">Register</a>
 </div>
 </body>
 </html>
@@ -264,7 +264,7 @@ public class RegistrationService {
             font-weight: bold;
             color: #5f6368;
         }
-        input[type="text"], input[type="password"] {
+        input[type="text"], input[type="password"], input[type="email"] {
             width: 100%;
             padding: 10px;
             margin-bottom: 20px;
@@ -300,6 +300,7 @@ public class RegistrationService {
         <input type="password" id="password" name="password" placeholder="Password" required>
         <button type="submit">Sign In</button>
     </form>
+    <a href="/login.html" style="display: inline-block; margin-top: 20px;">Already have an account</a>
 </div>
 </body>
 </html>
