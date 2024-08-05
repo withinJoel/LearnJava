@@ -39,6 +39,37 @@ MySpringBootApp/
           ├── gradle-wrapper.jar
           └── gradle-wrapper.properties
 ```
+## Explanation:
+
+* `MyApp.java`
+* Functionality: Main entry point of the application.
+* What should be present: Typically initializes the application context and starts the main application logic.
+* What should not be present: Business logic or detailed implementation of specific functionalities.
+
+* `config/`
+* Functionality: Contains application configuration classes.
+* What should be present: Classes that configure various aspects of the application (e.g., database configuration, security configuration).
+* What should not be present: Business logic, controller logic, or data access code.
+
+* `controller/`
+* Functionality: Houses controller classes.
+* What should be present: Classes that handle incoming HTTP requests, process input, and invoke service layer methods.
+* What should not be present: Detailed business logic (which should reside in service layer), data access code, or presentation-specific code beyond handling requests.
+
+* `service/`
+* Functionality: Contains service layer classes.
+* What should be present: Classes that encapsulate business logic and orchestrate data access through repositories.
+* What should not be present: Direct interaction with HTTP requests (handled by controllers), database queries (handled by repositories), or application configuration (handled by config classes).
+
+* `repository/`
+* Functionality: Houses repository classes.
+* What should be present: Classes responsible for database interactions (e.g., CRUD operations).
+* What should not be present: Business logic (handled by service layer), configuration details (handled by config classes), or HTTP request handling (handled by controllers).
+
+*`model/`
+* Functionality: Contains entity classes representing data structures.
+* What should be present: Plain Old Java Objects (POJOs) representing domain entities with fields and their getters/setters.
+* What should not be present: Logic beyond basic data handling (e.g., business logic, complex validation logic).
 
 ## `build.gradle` Example
 
