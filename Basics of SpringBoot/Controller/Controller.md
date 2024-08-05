@@ -176,11 +176,12 @@ public class MyController {
     <h1>Starship</h1>
     <form action="/loginauth" method="post">
         <label for="username">Username:</label>
-        <input type="text" id="username" name="username" placeholder="Username" required>
+        <input type="text" id="username" name="username" placeholder="Enter your username">
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password" placeholder="Password" required>
+        <input type="password" id="password" name="password" placeholder="Enter your password">
         <button type="submit">Sign In</button>
     </form>
+    <a href="/register.html">Signup</a>
 </div>
 </body>
 </html>
@@ -307,6 +308,7 @@ public class MyController {
 <div class="error-container">
     <h1>Error</h1>
     <p id="errorMessage"></p>
+    <a href="login.html">Try again</a>
 </div>
 
 <script>
