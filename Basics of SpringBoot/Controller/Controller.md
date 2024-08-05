@@ -77,7 +77,9 @@ public class LoginApplication {
 ```
 ## AppController.java
 ```
-import com.example.starship.service.RegistrationService;
+package com.example.demo.controller;
+
+import com.example.demo.service.RegistrationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -120,7 +122,7 @@ public class AppController {
 ```
 ## RegistrationService.java
 ```
-package com.example.starship.service;
+package com.example.demo.service;
 
 import org.springframework.stereotype.Service;
 
