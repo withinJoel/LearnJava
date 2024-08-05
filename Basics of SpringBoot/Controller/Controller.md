@@ -176,9 +176,9 @@ public class MyController {
     <h1>Starship</h1>
     <form action="/loginauth" method="post">
         <label for="username">Username:</label>
-        <input type="text" id="username" name="username" placeholder="Enter your username">
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password" placeholder="Enter your password">
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
         <button type="submit">Sign In</button>
     </form>
 </div>
