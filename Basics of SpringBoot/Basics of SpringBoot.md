@@ -180,3 +180,12 @@ Here's a step-by-step example to run a simple Spring Boot application that displ
 - [Thymeleaf Documentation](https://www.thymeleaf.org/documentation.html)
 
 Feel free to expand this guide with more details and examples as you continue learning!
+
+------------------------------------------------------------------------------------------------------------------
+## Install MySQL in linux using the terminal
+* `sudo apt update`
+* `sudo apt install mysql-server mysql-client`
+* `sudo mysql_secure_installation` - Better go with `no` for all the statements by default or read it and decide for yourself.
+* `sudo systemctl status mysql`
+* `sudo mysql -u root -p`
+* `sudo systemctl start mysql` - This step is mostly not required as it will start by default (Run this command in a new terminal)
