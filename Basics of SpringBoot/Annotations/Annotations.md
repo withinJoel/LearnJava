@@ -66,7 +66,7 @@ MySpringBootApp/
 * What should be present: Classes responsible for database interactions (e.g., CRUD operations).
 * What should not be present: Business logic (handled by service layer), configuration details (handled by config classes), or HTTP request handling (handled by controllers).
 
-*`model/`
+* `model/`
 * Functionality: Contains entity classes representing data structures.
 * What should be present: Plain Old Java Objects (POJOs) representing domain entities with fields and their getters/setters.
 * What should not be present: Logic beyond basic data handling (e.g., business logic, complex validation logic).
