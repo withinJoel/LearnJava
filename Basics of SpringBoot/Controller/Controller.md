@@ -107,6 +107,29 @@ public class MyController {
     }
 }
 ```
+## RegristrationService.java
+```
+package com.example.starship.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class RegistrationService {
+
+    public boolean login(String username, String password) {
+        String hardcodedUsername = "Joel";
+        String hardcodedPassword = "Joel";
+
+        if (username.equals(hardcodedUsername) && password.equals(hardcodedPassword)) {
+            //return "redirect:/feed.html";
+            return true;
+        } else {
+            //return "redirect:/error.html?message=invaliduser";
+            return false;
+        }
+    }
+}
+```
 ## login.html
 ```
 <!DOCTYPE html>
