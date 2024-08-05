@@ -5,6 +5,7 @@
 * Project name: demo
 * Using Gradle
 * Language: Java
+* Framework: SpringBoot
 
 ## File Directory Pattern
 ```
