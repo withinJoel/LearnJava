@@ -176,9 +176,9 @@ public class MyController {
     <h1>Starship</h1>
     <form action="/loginauth" method="post">
         <label for="username">Username:</label>
-        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+        <input type="text" id="username" name="username" placeholder="Username" required>
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <input type="password" id="password" name="password" placeholder="Password" required>
         <button type="submit">Sign In</button>
     </form>
 </div>
@@ -254,11 +254,11 @@ public class MyController {
     <h1>Starship</h1>
     <form action="/loginauth" method="post">
         <label for="username">Username:</label>
-        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+        <input type="text" id="username" name="username" placeholder="Username" required>
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Enter your emailid" required>
+        <input type="email" id="email" name="email" placeholder="Email ID" required>
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <input type="password" id="password" name="password" placeholder="Password" required>
         <button type="submit">Sign In</button>
     </form>
 </div>
