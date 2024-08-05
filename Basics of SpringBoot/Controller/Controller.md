@@ -1,6 +1,11 @@
 ## To build a simple web app that uses controller
 * Made with by Joel Jolly.
 
+## Project Details
+* Project name: demo
+* Using Gradle
+* Language: Java
+
 ## File Directory Pattern
 ```
 src
