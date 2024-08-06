@@ -5,6 +5,9 @@
 ## To start MySQL service
 * `mysql -u root -p` - To login inside the MySQL
 
+## To stop MySQL service
+* `exit;` - To stop the MySQL service.
+
 ## To create a table
 * Structure:
 ```
