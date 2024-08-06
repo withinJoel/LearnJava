@@ -4,7 +4,8 @@
 
 ## To start MySQL service
 * `mysql -u root -p` - To login inside the MySQL
-* To create a table
+
+## To create a table
 * Structure:
 * ```
 CREATE TABLE table_name (
@@ -20,6 +21,17 @@ CREATE TABLE users (
     username VARCHAR(50) NOT NULL,
     password VARCHAR(50) NOT NULL
 );
+```
+## To insert data
+* Structure:
+```
+INSERT INTO table_name (column1, column2, ...)
+VALUES (value1, value2, ...);
+```
+* Example:
+```
+INSERT INTO users (username, password)
+VALUES ('john_doe', 'password123');
 ```
 ## Database
 * `CREATE DATABASE database_name;` - To create a database.
