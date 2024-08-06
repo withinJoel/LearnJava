@@ -1,6 +1,6 @@
 ## Basics of MySQL
 
-** Disclaimer only to be used inside the terminal for Ubuntu OS only.
+* Disclaimer only to be used inside the terminal for Ubuntu OS only.
 
 ## To start MySQL service
 * `mysql -u root -p` - To login inside the MySQL
