@@ -27,25 +27,25 @@
 
 * Starter for using Spring Batch
 
-spring-boot-starter-cache
+## spring-boot-starter-cache
 
-Starter for using Spring Framework’s caching support
+* Starter for using Spring Framework’s caching support
 
-spring-boot-starter-data-cassandra
+## spring-boot-starter-data-cassandra
 
-Starter for using Cassandra distributed database and Spring Data Cassandra
+* Starter for using Cassandra distributed database and Spring Data Cassandra
 
-spring-boot-starter-data-cassandra-reactive
+## spring-boot-starter-data-cassandra-reactive
 
-Starter for using Cassandra distributed database and Spring Data Cassandra Reactive
+* Starter for using Cassandra distributed database and Spring Data Cassandra Reactive
 
-spring-boot-starter-data-couchbase
+## spring-boot-starter-data-couchbase
 
-Starter for using Couchbase document-oriented database and Spring Data Couchbase
+* Starter for using Couchbase document-oriented database and Spring Data Couchbase
 
-spring-boot-starter-data-couchbase-reactive
+## spring-boot-starter-data-couchbase-reactive
 
-Starter for using Couchbase document-oriented database and Spring Data Couchbase Reactive
+* Starter for using Couchbase document-oriented database and Spring Data Couchbase Reactive
 
 spring-boot-starter-data-elasticsearch
 
