@@ -145,33 +145,33 @@
 
 * Starter for using Spring Security’s OAuth2/OpenID Connect client features
 
-spring-boot-starter-oauth2-resource-server
+## spring-boot-starter-oauth2-resource-server
 
-Starter for using Spring Security’s OAuth2 resource server features
+* Starter for using Spring Security’s OAuth2 resource server features
 
-spring-boot-starter-pulsar
+## spring-boot-starter-pulsar
 
-Starter for using Spring for Apache Pulsar
+* Starter for using Spring for Apache Pulsar
 
-spring-boot-starter-pulsar-reactive
+## spring-boot-starter-pulsar-reactive
 
-Starter for using Spring for Apache Pulsar Reactive
+* Starter for using Spring for Apache Pulsar Reactive
 
-spring-boot-starter-quartz
+## spring-boot-starter-quartz
 
-Starter for using the Quartz scheduler
+* Starter for using the Quartz scheduler
 
-spring-boot-starter-rsocket
+## spring-boot-starter-rsocket
 
-Starter for building RSocket clients and servers
+* Starter for building RSocket clients and servers
 
-spring-boot-starter-security
+## spring-boot-starter-security
 
-Starter for using Spring Security
+* Starter for using Spring Security
 
-spring-boot-starter-test
+## spring-boot-starter-test
 
-Starter for testing Spring Boot applications with libraries including JUnit Jupiter, Hamcrest and Mockito
+* Starter for testing Spring Boot applications with libraries including JUnit Jupiter, Hamcrest and Mockito
 
 spring-boot-starter-thymeleaf
 
