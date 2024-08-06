@@ -389,6 +389,11 @@ public class StarshipApplication {
     <p>What is Starship?</p>
     <p>Future of HTML</p>
     <p>Will Ruby take over the world of programming?</p>
+    <p>Can Python be future?</p>
+    <p>Will HTML 4 ever come?</p>
+    <p>Why is python too slow?</p>
+    <p>Are your cookies exposed?</p>
+    <p>Will the A.I bubble explode?</p>
 </div>
 </body>
 </html>
