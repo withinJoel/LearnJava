@@ -197,12 +197,12 @@
 
 * Starter for building WebSocket applications using Spring Framework’s MVC WebSocket support
 
-# Spring Boot production starters
+# `Spring Boot production starters`
 * In addition to the application starters, the following starters can be used to add production ready features:
 ## spring-boot-starter-actuator
 
 * Starter for using Spring Boot’s Actuator which provides production ready features to help you monitor and manage your application.
-# Spring Boot technical starters
+# `Spring Boot technical starters`
 * Finally, Spring Boot also includes the following starters that can be used if you want to exclude or swap specific technical facets:
 ## spring-boot-starter-jetty
 
