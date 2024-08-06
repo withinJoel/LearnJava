@@ -201,32 +201,29 @@
 * In addition to the application starters, the following starters can be used to add production ready features:
 ## spring-boot-starter-actuator
 
-* Starter for using Spring Boot’s Actuator which provides production ready features to help you monitor and manage your application
-
-Finally, Spring Boot also includes the following starters that can be used if you want to exclude or swap specific technical facets:
-
+* Starter for using Spring Boot’s Actuator which provides production ready features to help you monitor and manage your application.
 # Spring Boot technical starters
-Name	Description
-spring-boot-starter-jetty
+* Finally, Spring Boot also includes the following starters that can be used if you want to exclude or swap specific technical facets:
+## spring-boot-starter-jetty
 
-Starter for using Jetty as the embedded servlet container. An alternative to spring-boot-starter-tomcat
+* Starter for using Jetty as the embedded servlet container. An alternative to spring-boot-starter-tomcat
 
-spring-boot-starter-log4j2
+## spring-boot-starter-log4j2
 
-Starter for using Log4j2 for logging. An alternative to spring-boot-starter-logging
+* Starter for using Log4j2 for logging. An alternative to spring-boot-starter-logging
 
-spring-boot-starter-logging
+## spring-boot-starter-logging
 
-Starter for logging using Logback. Default logging starter
+* Starter for logging using Logback. Default logging starter
 
-spring-boot-starter-reactor-netty
+## spring-boot-starter-reactor-netty
 
-Starter for using Reactor Netty as the embedded reactive HTTP server.
+* Starter for using Reactor Netty as the embedded reactive HTTP server.
 
-spring-boot-starter-tomcat
+## spring-boot-starter-tomcat
 
-Starter for using Tomcat as the embedded servlet container. Default servlet container starter used by spring-boot-starter-web
+* Starter for using Tomcat as the embedded servlet container. Default servlet container starter used by spring-boot-starter-web
 
-spring-boot-starter-undertow
+## spring-boot-starter-undertow
 
-Starter for using Undertow as the embedded servlet container. An alternative to spring-boot-starter-tomcat
+* Starter for using Undertow as the embedded servlet container. An alternative to spring-boot-starter-tomcat
