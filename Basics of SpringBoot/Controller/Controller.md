@@ -31,9 +31,10 @@ src
           * register.html
           * feed.html
           * error.html
+       application.properties
  - build.gradle
 ```
-## Application Properties
+## application.properties
 ```
 spring.application.name=starship
 spring.datasource.url=jdbc:mysql://localhost:3306/users
