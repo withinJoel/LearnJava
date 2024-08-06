@@ -2,7 +2,7 @@
 
 * The following application starters are provided by Spring Boot under the org.springframework.boot group:
 
-## Spring Boot application starters
+# Spring Boot application starters
 
 ## spring-boot-starter
 * Core starter, including auto-configuration support, logging and YAML
