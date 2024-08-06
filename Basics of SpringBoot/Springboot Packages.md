@@ -5,7 +5,7 @@
 # Spring Boot application starters
 
 * The following application starters are provided by Spring Boot under the `org.springframework.boot` group:
-* 
+  
 ## spring-boot-starter
 * Core starter, including auto-configuration support, logging and YAML
 
@@ -49,21 +49,21 @@
 
 * Starter for using Couchbase document-oriented database and Spring Data Couchbase Reactive
 
-spring-boot-starter-data-elasticsearch
+## spring-boot-starter-data-elasticsearch
 
-Starter for using Elasticsearch search and analytics engine and Spring Data Elasticsearch
+* Starter for using Elasticsearch search and analytics engine and Spring Data Elasticsearch
 
-spring-boot-starter-data-jdbc
+## spring-boot-starter-data-jdbc
 
-Starter for using Spring Data JDBC
+* Starter for using Spring Data JDBC
 
-spring-boot-starter-data-jpa
+## spring-boot-starter-data-jpa
 
-Starter for using Spring Data JPA with Hibernate
+* Starter for using Spring Data JPA with Hibernate
 
-spring-boot-starter-data-ldap
+## spring-boot-starter-data-ldap
 
-Starter for using Spring Data LDAP
+* Starter for using Spring Data LDAP
 
 spring-boot-starter-data-mongodb
 
