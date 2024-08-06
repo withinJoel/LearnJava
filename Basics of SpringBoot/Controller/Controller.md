@@ -133,12 +133,19 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private Long id;
-
     @Column(name = "username", nullable = false, length = 100)
     private String username;
-
     @Column(name = "password", nullable = false)
     private String password;
+
+    public User (String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
+
+    public User() {
+        
+    }
 
     // Getters and setters (omitted for brevity)
 
@@ -192,13 +199,13 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class RegistrationService {
-    
+
     @Autowired
     private UserRepository userRepository;
 
     public boolean register(String username, String password) {
         try {
-            User newUser = new User();
+            User newUser = new User(username, password); //Use an argument constructor
             newUser.setUsername(username);
             newUser.setPassword(password);
             userRepository.save(newUser);
