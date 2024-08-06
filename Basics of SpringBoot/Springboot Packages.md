@@ -97,53 +97,53 @@
 
 * Starter for building MVC web applications using FreeMarker views
 
-spring-boot-starter-graphql
+## spring-boot-starter-graphql
 
-Starter for building GraphQL applications with Spring GraphQL
+* Starter for building GraphQL applications with Spring GraphQL
 
-spring-boot-starter-groovy-templates
+## spring-boot-starter-groovy-templates
 
-Starter for building MVC web applications using Groovy Templates views
+* Starter for building MVC web applications using Groovy Templates views
 
-spring-boot-starter-hateoas
+## spring-boot-starter-hateoas
 
-Starter for building hypermedia-based RESTful web application with Spring MVC and Spring HATEOAS
+* Starter for building hypermedia-based RESTful web application with Spring MVC and Spring HATEOAS
 
-spring-boot-starter-integration
+## spring-boot-starter-integration
 
-Starter for using Spring Integration
+* Starter for using Spring Integration
 
-spring-boot-starter-jdbc
+## spring-boot-starter-jdbc
 
-Starter for using JDBC with the HikariCP connection pool
+* Starter for using JDBC with the HikariCP connection pool
 
-spring-boot-starter-jersey
+## spring-boot-starter-jersey
 
-Starter for building RESTful web applications using JAX-RS and Jersey. An alternative to spring-boot-starter-web
+* Starter for building RESTful web applications using JAX-RS and Jersey. An alternative to spring-boot-starter-web
 
-spring-boot-starter-jooq
+## spring-boot-starter-jooq
 
-Starter for using jOOQ to access SQL databases with JDBC. An alternative to spring-boot-starter-data-jpa or spring-boot-starter-jdbc
+* Starter for using jOOQ to access SQL databases with JDBC. An alternative to spring-boot-starter-data-jpa or spring-boot-starter-jdbc
 
-spring-boot-starter-json
+## spring-boot-starter-json
 
-Starter for reading and writing json
+* Starter for reading and writing json
 
-spring-boot-starter-mail
+## spring-boot-starter-mail
 
-Starter for using Java Mail and Spring Framework’s email sending support
+* Starter for using Java Mail and Spring Framework’s email sending support
 
-spring-boot-starter-mustache
+## spring-boot-starter-mustache
 
-Starter for building web applications using Mustache views
+* Starter for building web applications using Mustache views
 
-spring-boot-starter-oauth2-authorization-server
+## spring-boot-starter-oauth2-authorization-server
 
-Starter for using Spring Authorization Server features
+* Starter for using Spring Authorization Server features
 
-spring-boot-starter-oauth2-client
+## spring-boot-starter-oauth2-client
 
-Starter for using Spring Security’s OAuth2/OpenID Connect client features
+* Starter for using Spring Security’s OAuth2/OpenID Connect client features
 
 spring-boot-starter-oauth2-resource-server
 
