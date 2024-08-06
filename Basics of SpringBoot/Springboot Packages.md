@@ -65,37 +65,37 @@
 
 * Starter for using Spring Data LDAP
 
-spring-boot-starter-data-mongodb
+## spring-boot-starter-data-mongodb
 
-Starter for using MongoDB document-oriented database and Spring Data MongoDB
+* Starter for using MongoDB document-oriented database and Spring Data MongoDB
 
-spring-boot-starter-data-mongodb-reactive
+## spring-boot-starter-data-mongodb-reactive
 
-Starter for using MongoDB document-oriented database and Spring Data MongoDB Reactive
+* Starter for using MongoDB document-oriented database and Spring Data MongoDB Reactive
 
-spring-boot-starter-data-neo4j
+## spring-boot-starter-data-neo4j
 
-Starter for using Neo4j graph database and Spring Data Neo4j
+* Starter for using Neo4j graph database and Spring Data Neo4j
 
-spring-boot-starter-data-r2dbc
+## spring-boot-starter-data-r2dbc
 
-Starter for using Spring Data R2DBC
+* Starter for using Spring Data R2DBC
 
-spring-boot-starter-data-redis
+## spring-boot-starter-data-redis
 
-Starter for using Redis key-value data store with Spring Data Redis and the Lettuce client
+* Starter for using Redis key-value data store with Spring Data Redis and the Lettuce client
 
-spring-boot-starter-data-redis-reactive
+## spring-boot-starter-data-redis-reactive
 
-Starter for using Redis key-value data store with Spring Data Redis reactive and the Lettuce client
+* Starter for using Redis key-value data store with Spring Data Redis reactive and the Lettuce client
 
-spring-boot-starter-data-rest
+## spring-boot-starter-data-rest
 
-Starter for exposing Spring Data repositories over REST using Spring Data REST and Spring MVC
+* Starter for exposing Spring Data repositories over REST using Spring Data REST and Spring MVC
 
-spring-boot-starter-freemarker
+## spring-boot-starter-freemarker
 
-Starter for building MVC web applications using FreeMarker views
+* Starter for building MVC web applications using FreeMarker views
 
 spring-boot-starter-graphql
 
