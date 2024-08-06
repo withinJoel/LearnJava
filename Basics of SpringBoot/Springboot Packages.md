@@ -173,41 +173,39 @@
 
 * Starter for testing Spring Boot applications with libraries including JUnit Jupiter, Hamcrest and Mockito
 
-spring-boot-starter-thymeleaf
+## spring-boot-starter-thymeleaf
 
-Starter for building MVC web applications using Thymeleaf views
+* Starter for building MVC web applications using Thymeleaf views
 
-spring-boot-starter-validation
+## spring-boot-starter-validation
 
-Starter for using Java Bean Validation with Hibernate Validator
+* Starter for using Java Bean Validation with Hibernate Validator
 
-spring-boot-starter-web
+## spring-boot-starter-web
 
-Starter for building web, including RESTful, applications using Spring MVC. Uses Tomcat as the default embedded container
+* Starter for building web, including RESTful, applications using Spring MVC. Uses Tomcat as the default embedded container
 
-spring-boot-starter-web-services
+## spring-boot-starter-web-services
 
-Starter for using Spring Web Services
+* Starter for using Spring Web Services
 
-spring-boot-starter-webflux
+## spring-boot-starter-webflux
 
-Starter for building WebFlux applications using Spring Framework’s Reactive Web support
+* Starter for building WebFlux applications using Spring Framework’s Reactive Web support
 
-spring-boot-starter-websocket
+## spring-boot-starter-websocket
 
-Starter for building WebSocket applications using Spring Framework’s MVC WebSocket support
+* Starter for building WebSocket applications using Spring Framework’s MVC WebSocket support
 
-In addition to the application starters, the following starters can be used to add production ready features:
+# Spring Boot production starters
+* In addition to the application starters, the following starters can be used to add production ready features:
+## spring-boot-starter-actuator
 
-Table 2. Spring Boot production starters
-Name	Description
-spring-boot-starter-actuator
-
-Starter for using Spring Boot’s Actuator which provides production ready features to help you monitor and manage your application
+* Starter for using Spring Boot’s Actuator which provides production ready features to help you monitor and manage your application
 
 Finally, Spring Boot also includes the following starters that can be used if you want to exclude or swap specific technical facets:
 
-Table 3. Spring Boot technical starters
+# Spring Boot technical starters
 Name	Description
 spring-boot-starter-jetty
 
