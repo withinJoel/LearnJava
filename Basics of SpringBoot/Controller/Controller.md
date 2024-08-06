@@ -20,9 +20,9 @@ src
           * entity/
              `user.java` //All your database entities (Just write this properly for a smooth connection to the database)
 	  * repository
-   	      `UserRepository.java`
+   	      `UserRepository.java` // Connects to the entity(user.java) and gets the data from the service (RegistrationService.java) to work with the database.
           * service/
-              `RegistrationService.java`
+              `RegistrationService.java`//All the logic for you app.
     - resources
        - static
           * home.html
