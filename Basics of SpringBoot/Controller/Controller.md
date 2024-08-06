@@ -33,6 +33,16 @@ src
           * error.html
  - build.gradle
 ```
+## Application Properties
+```
+spring.application.name=starship
+spring.datasource.url=jdbc:mysql://localhost:3306/users
+spring.datasource.username=root
+spring.datasource.password=test123!
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.jpa.database-platform=org.hibernate.dialect.MySQLDialect
+spring.jpa.hibernate.ddl-auto=update
+```
 ## build.gradle
 ```
 plugins {
@@ -55,11 +65,11 @@ repositories {
 }
 
 dependencies {
-//    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-//    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'mysql:mysql-connector-java:8.0.28' // Specify the version explicitly
+    implementation 'javax.persistence:javax.persistence-api:2.2'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
-//    testImplementation 'org.springframework.security:spring-security-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
