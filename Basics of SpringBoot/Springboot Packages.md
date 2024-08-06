@@ -1,6 +1,6 @@
 # Springboot Packages
 
-* The following application starters are provided by Spring Boot under the org.springframework.boot group:
+* The following application starters are provided by Spring Boot under the `org.springframework.boot` group:
 
 # Spring Boot application starters
 
