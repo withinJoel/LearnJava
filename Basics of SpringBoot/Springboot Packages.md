@@ -2,7 +2,7 @@
 
 * This document talks about all the packages that are available and how to import them.
 
-# Spring Boot application starters
+# * Spring Boot application starters
 
 * The following application starters are provided by Spring Boot under the `org.springframework.boot` group:
   
