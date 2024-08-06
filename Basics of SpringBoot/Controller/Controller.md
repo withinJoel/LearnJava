@@ -601,8 +601,9 @@ public class StarshipApplication {
     <form action="/register" method="post">
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" placeholder="Username" required>
+        <label for="password">Password:</label>
         <input type="password" id="password" name="password" placeholder="Password" required>
-        <button type="submit">Sign In</button>
+        <button type="submit">Register</button>
     </form>
     <a href="/login.html" style="display: inline-block; margin-top: 20px;">Already have an account</a>
 </div>
