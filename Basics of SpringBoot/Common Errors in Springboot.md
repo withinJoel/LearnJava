@@ -1,7 +1,7 @@
 ## Common Errors in Springboot based Java Application
 
 ### Main Class
-** The main class does not have any void, String, int, boolean nothing just public class alone without taking any inputs.
+* The main class does not have any void, String, int, boolean nothing just public class alone without taking any inputs.
 example: 
 ```
 public class RegistrationService {
