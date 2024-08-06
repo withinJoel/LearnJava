@@ -39,7 +39,6 @@ VALUES ('john_doe', 'password123');
 ## Database
 * `CREATE DATABASE database_name;` - To create a database.
 * `use database_name` - To go inside the database. example: `use users`
-* 
 ## Operations
 
 * `show tables;` - To show all the tables inside the database (Use this after going inside the database only.)
