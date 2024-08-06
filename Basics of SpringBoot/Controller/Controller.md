@@ -192,7 +192,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class RegistrationService {
-
+    
     @Autowired
     private UserRepository userRepository;
 
