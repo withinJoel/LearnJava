@@ -20,13 +20,90 @@
    - **Language:** `Java`
 2. Click `Next`.
 
-## 3. Select Dependencies
+## 3. Gradle Project Directory Structure
+
+Here is a typical directory structure for a Spring Boot project using Gradle:
+
+```
+MySpringBootApp/
+ ├── build.gradle
+ ├── settings.gradle
+ ├── src/
+ │    ├── main/
+ │    │    ├── java/
+ │    │    │    └── com/
+ │    │    │        └── example/
+ │    │    │            ├── MyApp.java        # Main application class
+ │    │    │            ├── config/
+ │    │    │            │    └── AppConfig.java  # Configuration classes
+ │    │    │            ├── controller/
+ │    │    │            │    └── MyController.java  # Controller classes
+ │    │    │            ├── service/
+ │    │    │            │    └── MyService.java  # Service classes
+ │    │    │            ├── repository/
+ │    │    │            │    └── MyRepository.java  # Repository classes
+ │    │    │            └── model/
+ │    │    │                └── MyEntity.java  # Model classes
+ │    │    └── resources/
+ │    │        ├── application.properties  # Configuration properties
+ │    │        └── static/  # Static resources (e.g., HTML, CSS)
+ │    │        └── templates/  # Template files (e.g., Thymeleaf)
+ │    └── test/
+ │        └── java/
+ │            └── com/
+ │                └── example/
+ │                    └── MyAppTests.java  # Test classes
+ └── gradle/
+      └── wrapper/
+          ├── gradle-wrapper.jar
+          └── gradle-wrapper.properties
+```
+## Architecture of the Code
+* MainClass (The first default class that will start the app)
+* Controller layer - Just gives commands to the service layer (No code at all just call the service layer for the task)
+* Service layer - For the tasks that is given by the controller (The main code for all the tasks that are give n by the controller)
+   * Model layer - The service layer will give the model of the database and the service layer will give the data from the controller both combined will be given to the Repository layer.
+* Repository layer - For all the Database based activity (Only if there is a database)
+
+## Explanation:
+
+* `MyApp.java`
+* Functionality: Main entry point of the application.
+* What should be present: Typically initializes the application context and starts the main application logic.
+* What should not be present: Business logic or detailed implementation of specific functionalities.
+
+* `config/`
+* Functionality: Contains application configuration classes.
+* What should be present: Classes that configure various aspects of the application (e.g., database configuration, security configuration).
+* What should not be present: Business logic, controller logic, or data access code.
+
+* `controller/`
+* Functionality: Houses controller classes.
+* What should be present: Classes that handle incoming HTTP requests, process input, and invoke service layer methods.
+* What should not be present: Detailed business logic (which should reside in service layer), data access code, or presentation-specific code beyond handling requests.
+
+* `service/`
+* Functionality: Contains service layer classes.
+* What should be present: Classes that encapsulate business logic and orchestrate data access through repositories.
+* What should not be present: Direct interaction with HTTP requests (handled by controllers), database queries (handled by repositories), or application configuration (handled by config classes).
+
+* `repository/`
+* Functionality: Houses repository classes.
+* What should be present: Classes responsible for database interactions (e.g., CRUD operations).
+* What should not be present: Business logic (handled by service layer), configuration details (handled by config classes), or HTTP request handling (handled by controllers).
+
+* `model/`
+* Functionality: Contains entity classes representing data structures.
+* What should be present: Plain Old Java Objects (POJOs) representing domain entities with fields and their getters/setters.
+* What should not be present: Logic beyond basic data handling (e.g., business logic, complex validation logic).
+
+## 4. Select Dependencies
 
 1. In the `Dependencies` section, add the following:
    - **Spring Web**
 2. Click `Next`, then `Finish`.
 
-## 4. Configure Gradle Build Script
+## 5. Configure Gradle Build Script
 
 1. IntelliJ IDEA will create the project structure and a `build.gradle` file.
 2. Open the `build.gradle` file and ensure it includes the necessary dependencies and plugins:
@@ -57,7 +134,7 @@
     }
     ```
 
-## 5. Create Controller and View
+## 6. Create Controller and View
 
 ### Create a Controller
 
@@ -99,7 +176,7 @@
     </html>
     ```
 
-## 6. Configure Spring Boot for JSP
+## 7. Configure Spring Boot for JSP
 
 1. Open `src/main/resources/application.properties`.
 2. Add the following lines to configure the JSP view resolver:
@@ -109,7 +186,7 @@
     spring.mvc.view.suffix=.jsp
     ```
 
-## 7. Run the Application
+## 8. Run the Application
 
 1. Run your Spring Boot application by clicking the green `Run` button in IntelliJ IDEA.
 2. Alternatively, you can run the application from the terminal:
@@ -118,7 +195,7 @@
     ./gradlew bootRun
     ```
 
-## 8. Access the Application
+## 9. Access the Application
 
 1. Open your web browser.
 2. Navigate to `http://localhost:8080`.
