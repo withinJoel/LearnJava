@@ -194,8 +194,6 @@ public class User {
         
     }
 
-    // Getters and setters (omitted for brevity)
-
     public Long getId() {
         return id;
     }
