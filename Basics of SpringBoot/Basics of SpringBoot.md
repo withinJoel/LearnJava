@@ -41,7 +41,7 @@ MySpringBootApp/
  │    │    │            ├── service/
  │    │    │            │    └── MyService.java  # Service classes
  │    │    │            ├── repository/
- │    │    │            │    └── MyRepository.java  # Repository classes
+ │    │    │            │    └── MyRepository.java  # Repository classes (This can also be called as `DAO` - Direct Access Objects.
  │    │    │            └── model/
  │    │    │                └── MyEntity.java  # Model classes
  │    │    └── resources/
