@@ -3,7 +3,7 @@
 
 ## Project Details
 * Project name: starship
-* Using Gradle
+* Build automation tool: Gradle
 * Language: Java
 * Requirements: MySql
 * Framework: SpringBoot
