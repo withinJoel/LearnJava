@@ -18,7 +18,7 @@ src
           * controller/
              `AppController.java` // You can name whatever you want but make sure you have `Controller` in that file name.
           * dto/
-              `UserDTO.java` // For your DTO files.
+              `UserDTO.java` // For your DTO files (Data transfer Object).
           * entity/
              `user.java` //All your database entities (Just write this properly for a smooth connection to the database)
 	  * repository
