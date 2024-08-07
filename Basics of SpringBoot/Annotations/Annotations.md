@@ -164,7 +164,21 @@ public class MyRepository {
     // Database access logic
 }
 ```
+## Example Usuage
+```
+package com.example.starship.repository;
 
+import com.example.starship.entity.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface UserRepository extends JpaRepository<User, Long> {
+
+    User findByUsername(String username);
+
+}
+```
 ### `@Entity`
 - **Use:** Specifies that the class is an entity and is mapped to a database table.
 - **Placement:** Model classes.
@@ -177,7 +191,59 @@ public class MyEntity {
     // Other fields and methods
 }
 ```
+## Example Usuage
+```
+package com.example.starship.entity;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "user_table")
+public class User {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", nullable = false)
+    private Long id;
+    @Column(name = "username", nullable = false, length = 100)
+    private String username;
+    @Column(name = "password", nullable = false)
+    private String password;
+
+    public User (String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
+
+    public User() {
+
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+}
+```
 ### `@Autowired`
 - **Use:** Enables automatic dependency injection.
 - **Placement:** Fields, constructors, or methods in beans.
