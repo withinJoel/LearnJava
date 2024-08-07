@@ -188,9 +188,3 @@ public class MyService {
     private MyRepository myRepository;
 }
 ```
-
-## `settings.gradle` Example
-
-```
-rootProject.name = 'MySpringBootApp'
-```
