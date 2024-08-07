@@ -103,6 +103,7 @@ public class MyController {
 ```
 
 ### `@Service`
+- **Note:** `@Component` is a general-purpose Spring-managed bean, while `@Service` specifically denotes a service layer class that holds business logic.
 - **Use:** Indicates that a class is a service. It’s used to mark the business logic classes.
 - **Placement:** Service classes.
 ```
@@ -124,6 +125,7 @@ public class CalculatorService {
 }
 ```
 ### `@Component`
+- **Note:** `@Component` is a general-purpose Spring-managed bean, while `@Service` specifically denotes a service layer class that holds business logic.
 - **Use:** Indicates that a class is a Spring-managed component. It is used for general-purpose beans that don't fit into other specific categories.
 - **Placement:** General-purpose classes.
 ```
