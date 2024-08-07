@@ -1,7 +1,7 @@
 
 # Spring Boot Annotations
 
-## `build.gradle` Example
+## `build.gradle`
 
 Here is an example of a `build.gradle` file for a Spring Boot project:
 
@@ -111,7 +111,48 @@ public class MyService {
     // Business logic
 }
 ```
+## Example usuage
+```
+@Service
+public class CalculatorService {
+    public int add(int a, int b) {
+        return a + b;
+    }
+    public int subtract(int a, int b) {
+        return a - b;
+    }
+}
+```
+### `@Component`
+- **Use:** Indicates that a class is a Spring-managed component. It is used for general-purpose beans that don't fit into other specific categories.
+- **Placement:** General-purpose classes.
+```
+@Component
+public class MyComponent {
+    // General-purpose logic
+}
+```
+## Example usuage
+```
+@Component
+public class CalculatorPrinter {
+    private final CalculatorService calculatorService;
 
+    public CalculatorPrinter(CalculatorService calculatorService) {
+        this.calculatorService = calculatorService;
+    }
+
+    public void printAddition(int a, int b) {
+        int result = calculatorService.add(a, b);
+        System.out.println("Addition result: " + result);
+    }
+
+    public void printSubtraction(int a, int b) {
+        int result = calculatorService.subtract(a, b);
+        System.out.println("Subtraction result: " + result);
+    }
+}
+```
 ### `@Repository`
 - **Use:** Indicates that the class provides the mechanism for storage, retrieval, search, update, and delete operation on objects.
 - **Placement:** Repository classes.
