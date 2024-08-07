@@ -84,7 +84,6 @@ tasks.named('test') {
 ```
 package com.example.starship.controller;
 
-import com.example.starship.entity.User;
 import com.example.starship.dto.UserDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -104,15 +103,19 @@ public class AppController {
         return "home.html";
     }
 
-    @PostMapping("/loginauth")
+    @PostMapping("/loginauth") ///doudt
     public String loginauth(@RequestBody UserDTO userDTO) {
         String username = userDTO.getUsername();
         String password = userDTO.getPassword();
-
-        if (registrationService.login(username, password)) {
-            return "redirect:/feed.html";
-        } else {
-            return "redirect:/error.html?message=Incorrect username or password";
+        int verify = userDTO.getVerify();
+        if (verify == 7815) {
+            if (registrationService.login(username, password)) {
+                return "redirect:/feed.html";
+            } else {
+                return "redirect:/error.html?message=Incorrect username or password";
+            }
+        }  else {
+            return "redirect:/error.html?message=You are a bot";
         }
     }
 
@@ -137,16 +140,7 @@ package com.example.starship.dto;
 public class UserDTO {
     private String username;
     private String password;
-
-    // Default constructor
-    public UserDTO() {
-
-    }
-
-    public UserDTO(String username, String password) {
-        this.username = username;
-        this.password = password;
-    }
+    private int verify;
 
     // Getters and Setters
     public String getUsername() {
@@ -163,6 +157,14 @@ public class UserDTO {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public int getVerify() {
+        return verify;
+    }
+
+    public void setVerify(int verify) {
+        this.verify = verify;
     }
 }
 ```
@@ -578,9 +580,11 @@ public class StarshipApplication {
     <h1>Starship</h1>
     <form action="/loginauth" method="post">
         <label for="username">Username:</label>
-        <input type="text" id="username" name="username" placeholder="Enter your username">
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password" placeholder="Enter your password">
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <label for="verify">Enter the number below: 7815</label>
+        <input type="text" id="verify" name="verfy" placeholder="Verify" required>
         <button type="submit">Sign In</button>
     </form>
     <a href="/register.html" style="display: inline-block; margin-top: 20px;">Register</a>
@@ -592,7 +596,8 @@ public class StarshipApplication {
 
         const formData = {
             username: document.getElementById('username').value,
-            password: document.getElementById('password').value
+            password: document.getElementById('password').value,
+            verify: document.getElementById('verify').value
         };
 
         fetch('/loginauth', {
