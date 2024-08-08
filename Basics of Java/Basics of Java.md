@@ -270,3 +270,11 @@ public class OutputExample {
     }
 }
 ```
+## In a nutshell
+* class : class keyword is used to declare classes in Java
+* public : It is an access specifier. Public means this function is visible to all.
+* static : static is again a keyword used to make a function static. To execute a static function you do not have to create an Object of the class. The main() method here is called by JVM, without creating any object for class.
+* void : It is the return type, meaning this function will not return anything.
+* main : main() method is the most important method in a Java program. This is the method which is executed, hence all the logic must be inside the main() method. If a java class is not having a main() method, it causes compilation error.
+* String[] args : This is used to signify that the user may opt to enter parameters to the Java Program at command line. We can use both String[] args or String args[]. Java compiler would accept both forms.
+* System.out.println : This is used to print anything on the console like “printf” in C language.
