@@ -1,5 +1,5 @@
 ## To build a simple web app that uses controller (Using RequestBody & DTO)
-* Made with by Joel Jolly.
+* Made with 💖 by Joel Jolly
 
 ## Project Details
 * Project name: starship
