@@ -37,7 +37,7 @@ MySpringBootApp/
  │    │    │            ├── config/
  │    │    │            │    └── AppConfig.java  # Configuration classes
  │    │    │            ├── controller/
- |    |    |            |     └── MyController.java  # Controller classes
+ |    |    |            |    └── MyController.java  # Controller classes
  |    |    |            ├── dto/
  │    │    │            │    └── UserDTO.java  # Data Transfer Objects classes
  │    │    │            ├── service/
