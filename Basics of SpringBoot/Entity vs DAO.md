@@ -1,6 +1,6 @@
 ## Entity vs DAO
 ## Entity in Spring Boot
-* In Spring Boot, an entity typically represents a data model class that maps to a database table. It is annotated with @Entity from the javax.persistence package to indicate that it is a JPA (Java Persistence API) entity. Example:
+* In Spring Boot, an entity typically represents a data model class that maps to a database table. It is annotated with `@Entity` from the javax.persistence package to indicate that it is a JPA (Java Persistence API) entity. Example:
 ```
 import javax.persistence.*;
 
@@ -23,7 +23,7 @@ public class User {
 ```
 * Purpose: Entities in Spring Boot define the structure of the data that will be stored in the database. They typically represent tables or collections in a relational or NoSQL database.
 
-* Annotations: Annotations like @Entity, @Table, @Id, @GeneratedValue, and @Column are used to define metadata about how the entity maps to the database schema.
+* Annotations: Annotations like `@Entity`, `@Table`, `@Id`, `@GeneratedValue`, and `@Column` are used to define metadata about how the entity maps to the database schema.
 
 ## DAO (Data Access Object) in Spring Boot
 * In Spring Boot, DAOs are used to provide a layer of abstraction over the database interactions. They typically use Spring Data JPA repositories or custom DAO implementations to perform CRUD operations and other database operations. Example using Spring Data JPA:
