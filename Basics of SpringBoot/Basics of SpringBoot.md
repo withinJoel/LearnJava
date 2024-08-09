@@ -187,6 +187,7 @@ public class UserService {
 * Functionality: Houses repository classes.
 * What should be present: Classes responsible for database interactions (e.g., CRUD operations).
 * What should not be present: Business logic (handled by service layer), configuration details (handled by config classes), or HTTP request handling (handled by controllers).
+* Example:
 ```
 package com.example.myapp.repository;
 
