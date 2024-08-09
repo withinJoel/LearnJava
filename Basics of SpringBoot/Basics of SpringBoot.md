@@ -73,7 +73,42 @@ MySpringBootApp/
 * Functionality: Main entry point of the application.
 * What should be present: Typically initializes the application context and starts the main application logic.
 * What should not be present: Business logic or detailed implementation of specific functionalities.
+* Example:
+```java
+package com.example.myapp;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class MyApp {
+    public static void main(String[] args) {
+        SpringApplication.run(MyApp.class, args);
+    }
+}
+```
+* Example:
+```
+package com.example.myapp.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.builders.WebSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+
+@Configuration
+public class SecurityConfig extends WebSecurityConfigurerAdapter {
+    @Override
+    protected void configure(HttpSecurity http) throws Exception {
+        http
+            .authorizeRequests()
+            .anyRequest().authenticated()
+            .and()
+            .formLogin();
+    }
+}
+```
 * `config/`
 * Functionality: Contains application configuration classes.
 * What should be present: Classes that configure various aspects of the application (e.g., database configuration, security configuration).
