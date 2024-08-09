@@ -58,4 +58,4 @@ public interface UserRepository extends JpaRepository<User, Long> {
 
 * Entity: Annotated with @Entity to enable JPA mapping.
 * DAO: Typically implemented as Spring Data repositories (JpaRepository) or custom DAO classes.
-* In summary, in a Java Spring Boot application, entities define data models and are annotated with @Entity, while DAOs provide a layer of abstraction for database operations using Spring Data JPA repositories or custom implementations. Together, they facilitate efficient data management and persistence within Spring Boot applications.
+* In summary, in a Java Spring Boot application, entities define data models and are annotated with `@Entity`, while DAOs provide a layer of abstraction for database operations using Spring Data JPA repositories or custom implementations. Together, they facilitate efficient data management and persistence within Spring Boot applications.
