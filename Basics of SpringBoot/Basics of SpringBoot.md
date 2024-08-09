@@ -78,6 +78,11 @@ MySpringBootApp/
 * Functionality: Contains application configuration classes.
 * What should be present: Classes that configure various aspects of the application (e.g., database configuration, security configuration).
 * What should not be present: Business logic, controller logic, or data access code.
+ 
+* `dto/`
+* Functionality: Contains classes that are used to transfer data between different layers of an application.
+* What should be present: Plain classes or records that encapsulate data without any business logic. These classes typically include fields and their getters and setters or properties. They are often used to simplify data transfer and ensure that only necessary data is exposed.
+* What should not be present: Business logic, validation, or database access code. DTOs should not contain methods that manipulate data or interact with the database.
 
 * `controller/`
 * Functionality: Houses controller classes.
