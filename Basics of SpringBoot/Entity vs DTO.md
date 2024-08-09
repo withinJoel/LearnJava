@@ -4,7 +4,7 @@
 * An entity in Spring Boot represents a persistent domain object that is typically mapped to a database table using an ORM (Object-Relational Mapping) framework like Hibernate.
 
 ## Characteristics
-* An entity class is usually annotated with @Entity, marking it as a JPA (Java Persistence API) entity managed by the ORM. It contains fields that map to columns in the database table, often annotated with @Id, @GeneratedValue, @Column, etc.
+* An entity class is usually annotated with `@Entity`, marking it as a JPA (Java Persistence API) entity managed by the ORM. It contains fields that map to columns in the database table, often annotated with `@Id`, `@GeneratedValue`, `@Column`, etc.
 ```
 @Entity
 public class Product {
@@ -38,7 +38,7 @@ public class ProductDTO {
 ## Usage in Spring Boot
 * Entity Usage: Entities are used within the persistence layer of a Spring Boot application, typically managed by repositories that extend JpaRepository or similar interfaces. They represent domain objects that are persisted in the database.
 
-* DTO Usage: DTOs are used at the boundaries of the application, such as in REST controllers (@RestController), where they facilitate data transfer between the client and the backend services. They help to encapsulate data and avoid exposing internal entity structures.
+* DTO Usage: DTOs are used at the boundaries of the application, such as in REST controllers (`@RestController`), where they facilitate data transfer between the client and the backend services. They help to encapsulate data and avoid exposing internal entity structures.
 
 ## Mapping Between Entity and DTO
 * In a Spring Boot application, mapping between entities and DTOs is often necessary to manage data flow between different layers of the application.
