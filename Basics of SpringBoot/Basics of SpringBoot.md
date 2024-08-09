@@ -87,7 +87,11 @@ public class MyApp {
     }
 }
 ```
-* Example:
+* `config/`
+* Functionality: Contains application configuration classes.
+* What should be present: Classes that configure various aspects of the application (e.g., database configuration, security configuration).
+* What should not be present: Business logic, controller logic, or data access code.
+ * Example:
 ```
 package com.example.myapp.config;
 
@@ -109,36 +113,117 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     }
 }
 ```
-* `config/`
-* Functionality: Contains application configuration classes.
-* What should be present: Classes that configure various aspects of the application (e.g., database configuration, security configuration).
-* What should not be present: Business logic, controller logic, or data access code.
- 
+
 * `dto/`
 * Functionality: Contains classes that are used to transfer data between different layers of an application.
 * What should be present: Plain classes or records that encapsulate data without any business logic. These classes typically include fields and their getters and setters or properties. They are often used to simplify data transfer and ensure that only necessary data is exposed.
 * What should not be present: Business logic, validation, or database access code. DTOs should not contain methods that manipulate data or interact with the database.
+* Example:
+```
+package com.example.myapp.dto;
 
+public class UserDTO {
+    private String username;
+    private String email;
+
+    // Getters and setters
+    public String getUsername() { return username; }
+    public void setUsername(String username) { this.username = username; }
+    public String getEmail() { return email; }
+    public void setEmail(String email) { this.email = email; }
+}
+```
 * `controller/`
 * Functionality: Houses controller classes.
 * What should be present: Classes that handle incoming HTTP requests, process input, and invoke service layer methods.
 * What should not be present: Detailed business logic (which should reside in service layer), data access code, or presentation-specific code beyond handling requests.
+* Example:
+```
+package com.example.myapp.controller;
 
+import com.example.myapp.dto.UserDTO;
+import com.example.myapp.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class UserController {
+    @Autowired
+    private UserService userService;
+
+    @GetMapping("/user")
+    public UserDTO getUser(@RequestParam String username) {
+        return userService.getUserByUsername(username);
+    }
+}
+```
 * `service/`
 * Functionality: Contains service layer classes.
 * What should be present: Classes that encapsulate business logic and orchestrate data access through repositories.
 * What should not be present: Direct interaction with HTTP requests (handled by controllers), database queries (handled by repositories), or application configuration (handled by config classes).
+* Example:
+```
+package com.example.myapp.service;
 
+import com.example.myapp.dto.UserDTO;
+import com.example.myapp.repository.UserRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class UserService {
+    @Autowired
+    private UserRepository userRepository;
+
+    public UserDTO getUserByUsername(String username) {
+        // Business logic to fetch user
+        return userRepository.findByUsername(username);
+    }
+}
+```
 * `repository/`
 * Functionality: Houses repository classes.
 * What should be present: Classes responsible for database interactions (e.g., CRUD operations).
 * What should not be present: Business logic (handled by service layer), configuration details (handled by config classes), or HTTP request handling (handled by controllers).
+```
+package com.example.myapp.repository;
 
+import com.example.myapp.dto.UserDTO;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface UserRepository extends JpaRepository<UserDTO, Long> {
+    UserDTO findByUsername(String username);
+}
+```
 * `model/`
 * Functionality: Contains entity classes representing data structures.
 * What should be present: Plain Old Java Objects (POJOs) representing domain entities with fields and their getters/setters.
 * What should not be present: Logic beyond basic data handling (e.g., business logic, complex validation logic).
+* Example:
+```
+package com.example.myapp.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class User {
+    @Id
+    private Long id;
+    private String username;
+    private String email;
+
+    // Getters and setters
+    public Long getId() { return id; }
+    public void setId(Long id) { this.id = id; }
+    public String getUsername() { return username; }
+    public void setUsername(String username) { this.username = username; }
+    public String getEmail() { return email; }
+    public void setEmail(String email) { this.email = email; }
+}
+```
 ## 4. Select Dependencies
 
 1. In the `Dependencies` section, add the following:
