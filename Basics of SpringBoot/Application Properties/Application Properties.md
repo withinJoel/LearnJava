@@ -7,24 +7,24 @@
 * `spring.config.name`	application	It is used to set config file name.
 * `spring.config.location`		It is used to config the file name.
 * `server.port`	8080	Configures the HTTP server port
-* `server.servlet.context-path		It configures the context path of the application.
-* `logging.file.path		It configures the location of the log file.
-* `spring.banner.charset	UTF-8	Banner file encoding.
-* `spring.banner.location	classpath:banner.txt	It is used to set banner file location.
-* `logging.file		It is used to set log file name. For example, data.log.
-* `spring.application.index		It is used to set application index.
-* `spring.application.name		It is used to set the application name.
-* `spring.application.admin.enabled	false	It is used to enable admin features for the application.
-* `spring.config.location		It is used to config the file locations.
-* `spring.config.name	application	It is used to set config the file name.
-* `spring.mail.default-encoding	UTF-8	It is used to set default MimeMessage encoding.
-* `spring.mail.host		It is used to set SMTP server host. For example, smtp.example.com.
-* `spring.mail.password		It is used to set login password of the SMTP server.
-* `spring.mail.port		It is used to set SMTP server port.
-* `spring.mail.test-connection	false	It is used to test that the mail server is available on startup.
-* `spring.mail.username		It is used to set login user of the SMTP server.
-* `spring.main.sources		It is used to set sources for the application.
-* `server.address		It is used to set network address to which the server should bind to.
+* `server.servlet.context-path`		It configures the context path of the application.
+* `logging.file.path`		It configures the location of the log file.
+* `spring.banner.charset`	UTF-8	Banner file encoding.
+* `spring.banner.location`	classpath:banner.txt	It is used to set banner file location.
+* `logging.file`		It is used to set log file name. For example, data.log.
+* `spring.application.index`		It is used to set application index.
+* `spring.application.name`		It is used to set the application name.
+* `spring.application.admin.enabled`	false	It is used to enable admin features for the application.
+* `spring.config.location`		It is used to config the file locations.
+* `spring.config.name`	application	It is used to set config the file name.
+* `spring.mail.default-encoding`	UTF-8	It is used to set default MimeMessage encoding.
+* `spring.mail.host`		It is used to set SMTP server host. For example, smtp.example.com.
+* `spring.mail.password`		It is used to set login password of the SMTP server.
+* `spring.mail.port`		It is used to set SMTP server port.
+* `spring.mail.test-connection`	false	It is used to test that the mail server is available on startup.
+* `spring.mail.username`		It is used to set login user of the SMTP server.
+* `spring.main.sources`		It is used to set sources for the application.
+* `server.address`		It is used to set network address to which the server should bind to.
 * `server.connection-timeout		It is used to set time in milliseconds that connectors will wait for another HTTP request before closing the connection.
 * `server.context-path		It is used to set context path of the application.
 * `server.port	8080	It is used to set HTTP port.
