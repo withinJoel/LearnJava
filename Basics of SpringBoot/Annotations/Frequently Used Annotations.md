@@ -10,14 +10,14 @@
 ## @RestController:
 * Similar to @Controller, but it combines @Controller and @ResponseBody.
 * It’s used for creating RESTful web services that return JSON or XML responses directly from the methods.
-@RequestMapping:
-- Specifies the URL mapping for a controller method.
-- It can be used at the class level to define a base URL for all methods within the controller.
-- You can specify HTTP request methods, such as GET, POST, PUT, or DELETE, and URL paths.
-@PostMapping:
-- The @PostMapping annotation is used to map HTTP POST requests to a specific controller method in a Spring application.
-- When a client sends an HTTP POST request to a specific URL, Spring will route that request to the controller method annotated with @PostMapping if the URL matches the one specified in the method's mapping.
-- This annotation is commonly used for creating or updating resources on the server. For example, you might use @PostMapping to handle the submission of a form on a web page or to create a new record in a database.
+## @RequestMapping:
+* Specifies the URL mapping for a controller method.
+* It can be used at the class level to define a base URL for all methods within the controller.
+* You can specify HTTP request methods, such as GET, POST, PUT, or DELETE, and URL paths.
+## @PostMapping:
+* The @PostMapping annotation is used to map HTTP POST requests to a specific controller method in a Spring application.
+* When a client sends an HTTP POST request to a specific URL, Spring will route that request to the controller method annotated with @PostMapping if the URL matches the one specified in the method's mapping.
+* This annotation is commonly used for creating or updating resources on the server. For example, you might use @PostMapping to handle the submission of a form on a web page or to create a new record in a database.
 @GetMapping:
 - The @GetMapping annotation is used to map HTTP GET requests to a specific controller method in a Spring application.
 - When a client sends an HTTP GET request to a specific URL, Spring will route that request to the controller method annotated with @GetMapping if the URL matches the one specified in the method's mapping.
