@@ -34,22 +34,22 @@
 ## @Service, @Repository, @Component:
 - These annotations are used to define beans that Spring Boot should manage and inject into other parts of the application.
 - @Service is typically used for services, @Repository for data access components, and @Component for general beans.
-@Configuration:
-- Indicates that a class defines Spring configuration, often used in conjunction with @Bean.
-- Methods annotated with @Bean inside a @Configuration class define Spring beans.
-@EnableAutoConfiguration:
-- Enables Spring Boot’s auto-configuration feature.
-- It automatically configures various beans and components based on the dependencies present in your project.
-@Value:
-- Injects values from properties files or environment variables into bean properties.
-- It’s commonly used for configuring application properties.
-@ConfigurationProperties:
-- Used to bind external properties from application configuration files (e.g., application.properties or application.yml) to Java objects.
-- It simplifies the process of externalizing configuration properties.
-@EnableScheduling:
-- Enables scheduling of tasks using the @Scheduled annotation.
-- Useful for creating scheduled jobs or tasks within your Spring Boot application.
-@Entity , @Table, @Column (JPA Annotations):
--Used for defining entities, tables, and columns in a database when working with Java Persistence API (JPA) and Hibernate.
-@JsonFormat:
-- Allows you to customize the serialization format of date and time fields in JSON responses.
+## @Configuration:
+* Indicates that a class defines Spring configuration, often used in conjunction with @Bean.
+* Methods annotated with @Bean inside a @Configuration class define Spring beans.
+## @EnableAutoConfiguration:
+* Enables Spring Boot’s auto-configuration feature.
+* It automatically configures various beans and components based on the dependencies present in your project.
+## @Value:
+* Injects values from properties files or environment variables into bean properties.
+* It’s commonly used for configuring application properties.
+## @ConfigurationProperties:
+* Used to bind external properties from application configuration files (e.g., application.properties or application.yml) to Java objects.
+* It simplifies the process of externalizing configuration properties.
+## @EnableScheduling:
+* Enables scheduling of tasks using the @Scheduled annotation.
+* Useful for creating scheduled jobs or tasks within your Spring Boot application.
+## @Entity , @Table, @Column (JPA Annotations):
+*Used for defining entities, tables, and columns in a database when working with Java Persistence API (JPA) and Hibernate.
+## @JsonFormat:
+* Allows you to customize the serialization format of date and time fields in JSON responses.
