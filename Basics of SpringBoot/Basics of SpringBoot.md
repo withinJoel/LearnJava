@@ -62,24 +62,14 @@ MySpringBootApp/
 ```
 ## Architecture of the Code
 ![spring-boot-architecture2](https://github.com/user-attachments/assets/3fcc5981-f280-4de1-9b58-7bb3df9b61b5)
+
 * MainClass (The first default class that will start the app)
 * Controller layer - Just gives commands to the service layer (No code at all just call the service layer for the task)
 * Service layer - For the tasks that is given by the controller (The main code for all the tasks that are give n by the controller)
    * Model layer - The service layer will give the model of the database and the service layer will give the data from the controller both combined will be given to the Repository layer.
 * Repository layer - For all the Database based activity (Only if there is a database)
 
-
-
-
-
-
-
-
-
-
-
-
-
+![spring-boot-architecture](https://github.com/user-attachments/assets/6c519ed2-973c-42d5-b344-e3a074015d30)
 ## Explanation:
 
 * `MyApp.java`
