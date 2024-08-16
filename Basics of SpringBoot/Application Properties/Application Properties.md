@@ -31,21 +31,21 @@
 * `server.server-header`		It is used for the Server response header (no header is sent if empty)
 * `server.servlet-path`	It is used to set path of the main dispatcher servlet
 * `server.ssl.enabled`		It is used to enable SSL support.
-* `spring.http.multipart.enabled`	True	It is used to enable support of multi-part uploads.
-* `spring.servlet.multipart.max-file-size`	1MB	It is used to set max file size.
+* `spring.http.multipart.enabled`	It is used to enable support of multi-part uploads.
+* `spring.servlet.multipart.max-file-size`	It is used to set max file size.
 * `spring.mvc.async.request-timeout`		It is used to set time in milliseconds.
 * `spring.mvc.date-format`		It is used to set date format. For example, dd/MM/yyyy.
 * `spring.mvc.locale`		It is used to set locale for the application.
 * `spring.social.facebook.app-id`		It is used to set application's Facebook App ID.
 * `spring.social.linkedin.app-id`		It is used to set application's LinkedIn App ID.
 * `spring.social.twitter.app-id	`	It is used to set application's Twitter App ID.
-* `security.basic.authorize-mode`	role	It is used to set security authorize mode to apply.
+* `security.basic.authorize-mode`	It is used to set security authorize mode to apply.
 * `security.basic.enabled`	It is used to enable basic authentication.
 * `Spring.test.database.replace`	any	Type of existing DataSource to replace.
-* `Spring.test.mockmvc.print`	default	MVC Print option
-* `spring.freemaker.content-type`	text/html	Content Type value
+* `Spring.test.mockmvc.print`	MVC Print option
+* `spring.freemaker.content-type`	Content Type value
 * `server.server-header`		Value to use for the server response header.
-* `spring.security.filter.dispatcher-type`	async, error, request	Security filter chain dispatcher types.
-* `spring.security.filter.order`	-100	Security filter chain order.
+* `spring.security.filter.dispatcher-type`	Security filter chain dispatcher types.
+* `spring.security.filter.order`	Security filter chain order.
 * `spring.security.oauth2.client.registration.*`		OAuth client registrations.
 * `spring.security.oauth2.client.provider.*`		OAuth provider details.
