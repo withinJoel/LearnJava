@@ -1,129 +1,51 @@
-# TeamSync
-Made with 💖 by Joel Jolly.
+# Application Properties Table
+* The following tables provide a list of common Spring Boot properties:
 
-# About
-TeamSync is a comprehensive employee management and project tracking application designed to streamline the way you manage your workforce and projects. With TeamSync, you can effortlessly keep track of employee details, monitor the status of ongoing projects, and manage department information, all from a unified platform.
-
-# Project Current Progress
-1. Install Required Tools: ✅
-   * Java ✅
-   * IntelliJ ✅
-   * MySql ✅
-3. Create a New Spring Boot Project: ✅ 
-4. Set Up Version Control: ✅
-   * Github ✅ (Files are uploaded via GitKraken (For linux users) (Github Desktop for windows users)) (Note: If your individual files are less than 25 mb you can use github website on your browser for file uploading)
-6. Design the Database Schema: ✅  (Mentioned in the later part of this readme)
-7. Configure MySQL Connection: ✅ 
-8. Create JPA Entities: ✅
-9. Create Repository Interfaces: ✅ 
-10. Implement the Service Layer: ✅ 
-11. Create REST Controllers: ✅ 
-12. Handle Validation: ✅ 
-13. Test with Postman: ❌ (Have conducted few tests)
-    * Able to get info from the backend.
-15. Write Unit and Integration Tests: ✅ 
-16. Implement Basic Security (Optional): ✅
-  * (Secured in the HTML level)
-15. Prepare Documentation: ✅ (Almost)
-16. Deploy the Application: ❌ (Tried, but had issues deploying it) (Working on it)
-17. Code Review and Feedback: Pending
-
-# Screenshots
-* Index page
-
-![Screenshot from 2024-08-13 16-15-50](https://github.com/user-attachments/assets/184e26a5-ede0-4c51-bfe9-63a578a64f54)
-
-* Employees page
-
-![Screenshot from 2024-08-13 16-16-20](https://github.com/user-attachments/assets/bf514576-89d7-496c-88a7-85f8f9c73141)
-
-* Department page
-
-![Screenshot from 2024-08-13 16-16-27](https://github.com/user-attachments/assets/1a7e38b2-d3ec-458b-a32f-4e520b617f5c)
-
-* Project page
-
-![Screenshot from 2024-08-13 16-16-33](https://github.com/user-attachments/assets/7d68f10b-aabf-4f47-8e50-1cf9a06dc67e)
-
-* About page
-
-![Screenshot from 2024-08-14 12-52-47](https://github.com/user-attachments/assets/ffabbb7e-234a-47d5-89e3-32ce571c6d1d)
-
-# To get started
-* Create a database
-```
-CREATE DATABASE teamsync;
-```
-* Enter inside the database
-```
-USE teamsync_db;
-```
-
-* Create a table called `department`
-
-```
-CREATE TABLE department (
-  id BIGINT AUTO_INCREMENT PRIMARY KEY,
-  name VARCHAR(100) NOT NULL
-);
-```
-
-* Create a table called `employee`
-```
-CREATE TABLE employee (
-  id BIGINT AUTO_INCREMENT PRIMARY KEY,
-  name VARCHAR(100) NOT NULL,
-  email VARCHAR(100) NOT NULL,
-  department_id BIGINT,
-  FOREIGN KEY (department_id) REFERENCES department(id)
-);
-```
-* Create a table called `project`
-```
-CREATE TABLE project (
-  id BIGINT AUTO_INCREMENT PRIMARY KEY,
-  name VARCHAR(100) NOT NULL,
-  description TEXT,
-  employee_id BIGINT,
-  FOREIGN KEY (employee_id) REFERENCES employee(id)
-);
-```
-* Update the `application.properties`
-```
-spring.application.name=teamsync
-spring.datasource.url=jdbc:mysql://localhost:3306/teamsync  //replace teamsync with your database name.
-spring.datasource.username=root  //mysql name
-spring.datasource.password=test123!  //mysql password
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
-```
-* Paste the repo code inside the intellij project folder. (Before doing this create a new project using intellij and then close the intellij app and then paste the code from this repo)
-* Run the `build.gradle` (To install the packages)
-* Run the code.
-
-# Testing
-* There are testing code that is present in the `Test` folder.
-
-# Testing using Postman
-* First create an account in the postman site (<a href="https://www.postman.com/">https://www.postman.com/</a>)
-* Install the Postman cli or an Postman desktop app. (If you are an Linux user type `sudo snap install postman`
-
-![Screenshot from 2024-08-14 13-17-08](https://github.com/user-attachments/assets/94f1f65e-e2f6-41a9-a1e7-1600d50d991c)
-* Then run the cli or the app.
-* In the browser go to the website (<a href="https://www.postman.com/">https://www.postman.com/</a>) and click on `New Request` (If you are using cli)(if not use the installed application)
-
-![Screenshot from 2024-08-14 13-15-02](https://github.com/user-attachments/assets/05300a59-bdaf-4b49-9db5-cad85705cb02)
-
-* Example:
-
-![image](https://github.com/user-attachments/assets/b7c63af5-5643-42b8-b9a2-a6caffc4a127)
-
-# Want help use my Java & Springboot basics course (It's free)
-* https://github.com/withinJoel/LearnJava
-
-# Support Me
-If you love TeamSync and want to keep me caffeinated for more awesome updates, consider buying me a coffee!
-
-[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Donate-orange?style=for-the-badge&logo=buy-me-a-coffee)](https://www.buymeacoffee.com/withinjoel)
-
-Made with 💖 by Joel Jolly.
+* Debug	false	It enables debug logs.
+* spring.application.name		It is used to set the application name.
+* spring.application.admin.enabled	false	It is used to enable admin features of the application.
+* spring.config.name	application	It is used to set config file name.
+* spring.config.location		It is used to config the file name.
+* server.port	8080	Configures the HTTP server port
+* server.servlet.context-path		It configures the context path of the application.
+* logging.file.path		It configures the location of the log file.
+* spring.banner.charset	UTF-8	Banner file encoding.
+* spring.banner.location	classpath:banner.txt	It is used to set banner file location.
+* logging.file		It is used to set log file name. For example, data.log.
+* spring.application.index		It is used to set application index.
+* spring.application.name		It is used to set the application name.
+spring.application.admin.enabled	false	It is used to enable admin features for the application.
+spring.config.location		It is used to config the file locations.
+spring.config.name	application	It is used to set config the file name.
+spring.mail.default-encoding	UTF-8	It is used to set default MimeMessage encoding.
+spring.mail.host		It is used to set SMTP server host. For example, smtp.example.com.
+spring.mail.password		It is used to set login password of the SMTP server.
+spring.mail.port		It is used to set SMTP server port.
+spring.mail.test-connection	false	It is used to test that the mail server is available on startup.
+spring.mail.username		It is used to set login user of the SMTP server.
+spring.main.sources		It is used to set sources for the application.
+server.address		It is used to set network address to which the server should bind to.
+server.connection-timeout		It is used to set time in milliseconds that connectors will wait for another HTTP request before closing the connection.
+server.context-path		It is used to set context path of the application.
+server.port	8080	It is used to set HTTP port.
+server.server-header		It is used for the Server response header (no header is sent if empty)
+server.servlet-path	/	It is used to set path of the main dispatcher servlet
+server.ssl.enabled		It is used to enable SSL support.
+spring.http.multipart.enabled	True	It is used to enable support of multi-part uploads.
+spring.servlet.multipart.max-file-size	1MB	It is used to set max file size.
+spring.mvc.async.request-timeout		It is used to set time in milliseconds.
+spring.mvc.date-format		It is used to set date format. For example, dd/MM/yyyy.
+spring.mvc.locale		It is used to set locale for the application.
+spring.social.facebook.app-id		It is used to set application's Facebook App ID.
+spring.social.linkedin.app-id		It is used to set application's LinkedIn App ID.
+spring.social.twitter.app-id		It is used to set application's Twitter App ID.
+security.basic.authorize-mode	role	It is used to set security authorize mode to apply.
+security.basic.enabled	true	It is used to enable basic authentication.
+Spring.test.database.replace	any	Type of existing DataSource to replace.
+Spring.test.mockmvc.print	default	MVC Print option
+spring.freemaker.content-type	text/html	Content Type value
+server.server-header		Value to use for the server response header.
+spring.security.filter.dispatcher-type	async, error, request	Security filter chain dispatcher types.
+spring.security.filter.order	-100	Security filter chain order.
+spring.security.oauth2.client.registration.*		OAuth client registrations.
+spring.security.oauth2.client.provider.*		OAuth provider details.
