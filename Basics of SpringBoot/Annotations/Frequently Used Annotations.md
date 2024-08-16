@@ -1,5 +1,5 @@
 # Frequently Used Annotations
-## `@SpringBootApplication:`
+## `@SpringBootApplication`:
 * This annotation is typically placed on the main class of a Spring Boot application.
 * It combines multiple annotations, including @Configuration @EnableAutoConfiguration and @ComponentScan
 * It indicates that this class is the entry point for your Spring Boot application.
