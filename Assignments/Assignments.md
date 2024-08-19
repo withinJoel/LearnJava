@@ -23,3 +23,6 @@
     }
 ]
 ```
+
+# August 13th
+* Host the site.
