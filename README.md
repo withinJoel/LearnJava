@@ -1,6 +1,9 @@
 # LearnJava
-
 * The ultimate guide to learn Java.
+
+# Star History
+[![Star History Chart](https://api.star-history.com/svg?repos=withinjoel/learnjava&type=Timeline)](https://star-history.com/#withinjoel/learnjava&Timeline)
+
 # Support Me
 If you love LearnJava and want to keep me caffeinated for more awesome updates, consider buying me a coffee!
 
