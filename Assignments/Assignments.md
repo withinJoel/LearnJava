@@ -1,6 +1,5 @@
 # Assignments
 * All of the assignments for your learning process.
-# August 19th
 
 # August 16th
 * Install Nigix and conect over a network.
